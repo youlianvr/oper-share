@@ -1,0 +1,41 @@
+{
+  "name": "dashi-ppt-runtime",
+  "version": "0.4.11",
+  "private": true,
+  "type": "module",
+  "imports": {
+    "#dashi-bespoke-runtime": "./dist/theme-runtime/bespoke.module.mjs",
+    "#dashi-bespoke-theme-profiles": "./dist/theme-runtime/bespoke-profiles.module.mjs",
+    "#dashi-theme-runtime-overrides": "./dist/theme-runtime/theme-overrides.module.mjs"
+  },
+  "scripts": {
+    "layout:query": "node scripts/layout-query.mjs",
+    "inspect:layout": "node scripts/inspect-layout.mjs",
+    "media:stage": "node scripts/stage-media.mjs",
+    "props:safe": "node scripts/write-safe-props.mjs",
+    "goal:scaffold": "node scripts/goal-scaffold.mjs",
+    "validate:goal-spec": "node scripts/validate-goal-spec.mjs",
+    "render:goal": "tsx scripts/render-goal-deck.jsx",
+    "preview:https": "node scripts/serve-preview-https.mjs",
+    "preview:start": "node scripts/start-preview-server.mjs",
+    "validate:swiss": "node scripts/validate-swiss-deck.mjs",
+    "validate:goal-copy": "node scripts/validate-goal-copy.mjs",
+    "validate:four-variant-quality": "node scripts/validate-four-variant-quality.mjs",
+    "export:pptx": "node scripts/export-pptx.mjs",
+    "export:pdf": "node scripts/export-pptx.mjs --pdf"
+  },
+  "dependencies": {
+    "gsap": "^3.15.0",
+    "html-to-image": "^1.11.13",
+    "pptxgenjs": "^4.0.1",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "tsx": "^4.20.0",
+    "esbuild": "^0.28.0",
+    "pngjs": "^7.0.0",
+    "playwright-core": "^1.60.0",
+    "pdf-lib": "^1.17.1"
+  }
+}

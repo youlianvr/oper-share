@@ -1,0 +1,15 @@
+{
+  "skill_name": "workspace-map",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "I want to add a new skill to the AGGG2.0 canon. What's the right way?",
+      "expected_output": "Put it in skills/<name>/SKILL.md (name = folder name, agentskills.io format); distribute: python3 scripts/install_agents.py --skills (to harnesses + ~/.agents/skills/); check md5 of copies; when removing a skill — clean harnesses manually (install_agents.py doesn't remove); after editing AGENTS.md — 3 mirrors + --all + run_tests --mirrors."
+    },
+    {
+      "id": 2,
+      "prompt": "AGENTS.md in the root was updated. What must be done next?",
+      "expected_output": "1) sync the 3 mirrors (root, projects/sherpa-voice/AGENTS.md, ~/.config/opencode/AGENTS.md) in one pass; 2) python3 scripts/install_agents.py --all (AGENTS.md + canon skills + agent skills, .bak backup); 3) ./projects/sherpa-voice/run_tests.sh --mirrors — identity check."
+    }
+  ]
+}

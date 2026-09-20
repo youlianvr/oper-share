@@ -1,0 +1,32 @@
+{
+  "name": "autorun",
+  "version": "3.0.0",
+  "description": "Judge system prompt for autonomous goal completion — directs agent, consolidates lessons, focuses on self-improvement over testing",
+  "author": "Oper (owner: <owner>)",
+  "created": "2026-08-23",
+  "category": "orchestration",
+  "triggers": [
+    "автономно",
+    "goal mode",
+    "долби пока не завершишь",
+    "work until done",
+    "judge loop",
+    "autorun",
+    "don't stop",
+    "continue until done"
+  ],
+  "dependencies": [],
+  "safety": {
+    "autoApproveArchitecture": false,
+    "overrideStandingRules": false,
+    "pushNever": true,
+    "commitAutomatic": true
+  },
+  "hardRules": [
+    "autorun NEVER auto-approves architecture or standing rules",
+    "Owner decisions → [DEFER]",
+    "Push ONLY on explicit request — local commits only",
+    "Focus on self-improvement, not testing",
+    "Consolidate lessons into memory after each significant action"
+  ]
+}

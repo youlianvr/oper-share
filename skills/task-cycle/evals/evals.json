@@ -1,0 +1,15 @@
+{
+  "skill_name": "task-cycle",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "New feature: voice transcription with a per-user minute limit. Run the task properly end to end.",
+      "expected_output": "All phases of the cycle: 0) summary; 1) base (findings/search — has this been analyzed); 2) web research BEFORE code (how the industry does limits); 3) plan with a done criterion; 4) action via the base/LSP/CRG; 5) verification (linter+tests+live); 6) findings into research.db; 7) documentation; 8) report with the result first."
+    },
+    {
+      "id": 2,
+      "prompt": "I'm fixing the same deduction bug for the second time, and again it didn't help. What do I do?",
+      "expected_output": "The \"error repeats twice\" gate: change the method, obtain a NEW fact (log, dump, isolation, history) — not another blind edit. Then return to phase 2 (research). If stuck for more than 3 cycles — postmortem, rule into the canon."
+    }
+  ]
+}

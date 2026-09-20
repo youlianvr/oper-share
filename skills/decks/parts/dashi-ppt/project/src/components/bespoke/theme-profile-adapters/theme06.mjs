@@ -1,0 +1,57 @@
+import { KxGrid } from '../../themes/theme06/source/slides/kit.jsx';
+import { adapter, cssVar, onColor } from '../theme-profile-core.mjs';
+
+export default adapter({
+  sourceTokens: Object.freeze({ rootClass: 'kx-slide', darkClass: 'kx-dark', lightClass: 'kx-light' }),
+  sourcePath: 'theme06/source/slides/kit.jsx',
+  sourcePrimitives: { Grid: KxGrid },
+  rootClass: 'kx-slide kx-dark',
+  base: {
+    bg: cssVar('--kx-ink', '#0c0c0c'),
+    surface: cssVar('--kx-ink-2', '#141414'),
+    ink: cssVar('--kx-cream', '#f0efe6'),
+    muted: cssVar('--kx-mute-2', '#9a9a92'),
+    accent: cssVar('--kx-accent', '#c8f135'),
+    accent2: cssVar('--kx-mute', '#c8c8c0'),
+    line: cssVar('--kx-line', 'rgba(255,255,255,.10)'),
+    fontDisplay: "'Archivo','Noto Sans SC',system-ui,sans-serif",
+    fontBody: "'Archivo','Noto Sans SC',system-ui,sans-serif",
+    fontMono: "'Space Mono','Noto Sans SC',monospace",
+    typeScale: { kicker: 24, title: 72, subtitle: 42, body: 27, label: 24, caption: 24, metric: 92 },
+    pad: 96,
+    gap: 24,
+    radius: 0,
+    shadow: 'none',
+    cardTreatment: { padding: 28, borderWidth: 1, borderStyle: 'solid', backdropFilter: 'none' },
+    mediaTreatment: {
+      radius: 0,
+      filter: 'none',
+      overlay: 'none',
+      border: `1px solid ${cssVar('--kx-line', 'rgba(255,255,255,.10)')}`,
+    },
+    chartTreatment: {
+      grid: cssVar('--kx-line', 'rgba(255,255,255,.10)'),
+      label: cssVar('--kx-mute-2', '#9a9a92'),
+      series: [cssVar('--kx-accent', '#c8f135'), cssVar('--kx-cream', '#f0efe6'), cssVar('--kx-mute', '#c8c8c0')],
+      barRadius: 0,
+      strokeWidth: 5,
+    },
+    shapeTreatment: { lineWidth: 2, panelRadius: 0, panelBorderWidth: 1 },
+    decoration: 'theme06-grid',
+  },
+  backgrounds: {
+    default: {},
+    surface: { bg: cssVar('--kx-ink-2', '#141414') },
+    muted: { bg: cssVar('--kx-ink-3', '#1c1c1c') },
+    accent: onColor(cssVar('--kx-accent', '#c8f135'), cssVar('--kx-ink', '#0c0c0c'), cssVar('--kx-cream', '#f0efe6')),
+    dark: {},
+    light: {
+      rootClass: 'kx-slide kx-light',
+      bg: cssVar('--kx-cream', '#f0efe6'),
+      surface: cssVar('--kx-cream-2', '#e6e4d8'),
+      ink: cssVar('--kx-ink', '#0c0c0c'),
+      muted: cssVar('--kx-mute-2', '#9a9a92'),
+      line: cssVar('--kx-line-d', 'rgba(0,0,0,.14)'),
+    },
+  },
+});

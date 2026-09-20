@@ -1,0 +1,75 @@
+import {
+  GXN_PALETTE,
+  GXN_SCHEMES,
+  GXN_TOKENS,
+  THEME_CLASS as THEME02_CLASS,
+  ThemeStyle as Theme02Style,
+} from '../../themes/theme02/source/src/gxnTheme.js';
+import { adapter, onColor } from '../theme-profile-core.mjs';
+
+const THEME02_FAMILY_RECIPES = {
+  hero: { frame: 'gxn-orbit', surface: 'open', titleClass: 'display', titleScale: 72, quoteMode: 'pull' },
+  editorial: { frame: 'gxn-orbit', surface: 'open', titleScale: 62, listMode: 'rail', quoteMode: 'pull' },
+  split: { frame: 'gxn-split', surface: 'neon-ticket', listMode: 'ledger' },
+  comparison: { frame: 'gxn-comparison', surface: 'neon-ticket', listMode: 'comparison' },
+  process: { frame: 'gxn-process', surface: 'open', listMode: 'process' },
+  matrix: { frame: 'gxn-matrix', surface: 'neon-ticket', quoteMode: 'matrix' },
+  'metric-spotlight': { frame: 'gxn-metrics', surface: 'open', metricMode: 'band' },
+  timeline: { frame: 'gxn-timeline', surface: 'open', listMode: 'timeline' },
+  'chart-led': { frame: 'gxn-chart', surface: 'open', chartMode: 'plot' },
+};
+
+export default adapter({
+  sourceTokens: GXN_TOKENS,
+  sourcePath: 'theme02/source/src/gxnTheme.js',
+  Runtime: Theme02Style,
+  rootClass: `${THEME02_CLASS} gxn-slide`,
+  familyRecipes: THEME02_FAMILY_RECIPES,
+  base: {
+    bg: GXN_TOKENS.bg,
+    surface: GXN_SCHEMES.green.ticket.fillA,
+    ink: GXN_TOKENS.text,
+    muted: GXN_TOKENS.textDim,
+    accent: GXN_TOKENS.accent,
+    accent2: GXN_TOKENS.accent2,
+    line: 'rgba(255,255,255,.09)',
+    fontDisplay: "'Space Grotesk','Noto Sans SC',-apple-system,sans-serif",
+    fontBody: "'Noto Sans SC','Space Grotesk',-apple-system,sans-serif",
+    fontMono: "'Space Mono',ui-monospace,'SFMono-Regular',monospace",
+    typeScale: { kicker: 24, title: 58, subtitle: 40, body: 28, label: 24, caption: 24, metric: 112 },
+    pad: 108,
+    gap: 32,
+    radius: 24,
+    shadow: 'inset 0 1px 0 rgba(255,255,255,.06),inset 0 0 42px -16px rgba(47,224,127,.2),0 26px 60px -40px rgba(0,0,0,.9)',
+    cardTreatment: {
+      mode: 'neon-ticket',
+      padding: 30,
+      borderWidth: 1,
+      borderStyle: 'solid',
+      backdropFilter: 'none',
+    },
+    mediaTreatment: {
+      radius: 18,
+      filter: 'none',
+      overlay: 'linear-gradient(to top,rgba(4,6,8,.52),transparent 46%)',
+      border: '1px solid rgba(47,224,127,.3)',
+    },
+    chartTreatment: {
+      grid: 'rgba(255,255,255,.09)',
+      label: GXN_TOKENS.textDim,
+      series: GXN_PALETTE,
+      barRadius: 18,
+      strokeWidth: 7,
+    },
+    shapeTreatment: { lineWidth: 2, panelRadius: 24, panelBorderWidth: 1 },
+    decoration: 'theme02-grid',
+  },
+  backgrounds: {
+    default: {},
+    surface: { bg: GXN_SCHEMES.green.ticket.fillB },
+    muted: { bg: GXN_SCHEMES.green.ticket.fillA },
+    accent: onColor(GXN_TOKENS.accent, GXN_TOKENS.bg, GXN_TOKENS.accentCool),
+    dark: { bg: GXN_TOKENS.bg },
+    light: { bg: GXN_SCHEMES.green.ticket.fillA },
+  },
+});

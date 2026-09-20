@@ -1,0 +1,560 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Dashi PPT Goal Spec",
+  "type": "object",
+  "required": [
+    "title",
+    "goal"
+  ],
+  "additionalProperties": true,
+  "properties": {
+    "schemaVersion": {
+      "type": "integer"
+    },
+    "title": {
+      "type": "string"
+    },
+    "goal": {
+      "type": "string"
+    },
+    "audience": {
+      "type": "string"
+    },
+    "owner": {
+      "type": "string"
+    },
+    "randomSeed": {
+      "type": "string"
+    },
+    "workflowRunId": {
+      "type": "string"
+    },
+    "pageCount": {
+      "type": "number"
+    },
+    "themePack": {
+      "type": "string",
+      "enum": [
+        "theme01",
+        "theme02",
+        "theme03",
+        "theme04",
+        "theme05",
+        "theme06",
+        "theme07",
+        "theme08",
+        "theme09",
+        "theme10",
+        "theme11",
+        "theme12"
+      ]
+    },
+    "variantOutputMode": {
+      "enum": [
+        "comparison",
+        "selected-only"
+      ]
+    },
+    "text": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "string"
+      }
+    },
+    "media": false,
+    "props": {
+      "type": "object"
+    },
+    "slides": {
+      "type": "array"
+    }
+  },
+  "allOf": [
+    {
+      "if": {
+        "required": [
+          "schemaVersion"
+        ],
+        "properties": {
+          "schemaVersion": {
+            "const": 2
+          }
+        }
+      },
+      "then": {
+        "required": [
+          "slides"
+        ],
+        "properties": {
+          "slides": {
+            "type": "array",
+            "items": {
+              "$ref": "#/$defs/v2Slide"
+            }
+          }
+        }
+      },
+      "else": {
+        "properties": {
+          "slides": {
+            "type": "array",
+            "items": {
+              "$ref": "#/$defs/legacySlide"
+            }
+          }
+        }
+      }
+    }
+  ],
+  "$defs": {
+    "contentMap": {
+      "type": "object",
+      "additionalProperties": {
+        "oneOf": [
+          {
+            "type": "string",
+            "minLength": 1,
+            "not": {
+              "pattern": "^content(?:\\.|\\[|$)"
+            }
+          },
+          {
+            "type": "object",
+            "required": [
+              "source"
+            ],
+            "properties": {
+              "source": {
+                "type": "string",
+                "minLength": 1,
+                "not": {
+                  "pattern": "^content(?:\\.|\\[|$)"
+                }
+              },
+              "select": {
+                "type": "string",
+                "minLength": 1
+              },
+              "fields": {
+                "type": "object",
+                "additionalProperties": {
+                  "type": "string",
+                  "minLength": 1
+                }
+              }
+            }
+          }
+        ]
+      }
+    },
+    "legacyVariant": {
+      "type": "object",
+      "required": [
+        "id",
+        "layout",
+        "props"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "layout": {
+          "type": "string",
+          "minLength": 1
+        },
+        "props": {
+          "type": "object"
+        },
+        "media": false,
+        "copy": {
+          "type": "object"
+        },
+        "needsVisual": {
+          "type": "boolean"
+        },
+        "imageGen": {
+          "type": "boolean"
+        },
+        "needsImageGen": {
+          "type": "boolean"
+        },
+        "plannedImages": {
+          "type": [
+            "boolean",
+            "number"
+          ]
+        },
+        "providedImages": {
+          "oneOf": [
+            {
+              "type": "boolean"
+            },
+            {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            }
+          ]
+        }
+      },
+      "additionalProperties": true
+    },
+    "templateVariant": {
+      "type": "object",
+      "required": [
+        "id",
+        "kind",
+        "layout",
+        "props",
+        "contentMap"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "kind": {
+          "const": "template"
+        },
+        "layout": {
+          "type": "string",
+          "minLength": 1
+        },
+        "props": {
+          "type": "object"
+        },
+        "contentMap": {
+          "$ref": "#/$defs/contentMap"
+        },
+        "media": false
+      },
+      "additionalProperties": true
+    },
+    "bespokeElement": {
+      "type": "object",
+      "required": [
+        "id",
+        "type",
+        "grid"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "type": {
+          "enum": [
+            "text",
+            "metric",
+            "list",
+            "quote",
+            "media",
+            "shape",
+            "chart"
+          ]
+        },
+        "grid": {
+          "type": "object",
+          "required": [
+            "column",
+            "row",
+            "width",
+            "height"
+          ],
+          "properties": {
+            "column": {
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 12
+            },
+            "row": {
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 8
+            },
+            "width": {
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 12
+            },
+            "height": {
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 8
+            }
+          },
+          "additionalProperties": false
+        },
+        "html": false,
+        "jsx": false,
+        "className": false,
+        "style": false,
+        "controls": false,
+        "profile": false,
+        "rawCss": false,
+        "css": false
+      },
+      "additionalProperties": true
+    },
+    "bespokeComposition": {
+      "type": "object",
+      "required": [
+        "designIntent",
+        "background",
+        "elements"
+      ],
+      "properties": {
+        "designIntent": {
+          "type": "object",
+          "required": [
+            "objective",
+            "audience",
+            "narrativeRole",
+            "emphasis",
+            "rationale"
+          ],
+          "properties": {
+            "objective": {
+              "type": "string",
+              "minLength": 1
+            },
+            "audience": {
+              "type": "string",
+              "minLength": 1
+            },
+            "narrativeRole": {
+              "type": "string",
+              "minLength": 1
+            },
+            "emphasis": {
+              "type": "string",
+              "minLength": 1
+            },
+            "rationale": {
+              "type": "string",
+              "minLength": 1
+            },
+            "compositionFamily": {
+              "enum": [
+                "hero",
+                "split",
+                "metric-spotlight",
+                "chart-led",
+                "timeline",
+                "matrix",
+                "editorial",
+                "comparison",
+                "process"
+              ]
+            }
+          },
+          "additionalProperties": false
+        },
+        "background": {
+          "enum": [
+            "default",
+            "surface",
+            "muted",
+            "accent",
+            "dark",
+            "light"
+          ]
+        },
+        "elements": {
+          "type": "array",
+          "minItems": 1,
+          "maxItems": 32,
+          "items": {
+            "$ref": "#/$defs/bespokeElement"
+          }
+        }
+      },
+      "additionalProperties": false
+    },
+    "bespokeVariant": {
+      "type": "object",
+      "required": [
+        "id",
+        "kind",
+        "adjustable",
+        "composition",
+        "contentMap"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "kind": {
+          "const": "bespoke"
+        },
+        "adjustable": {
+          "const": false
+        },
+        "composition": {
+          "$ref": "#/$defs/bespokeComposition"
+        },
+        "contentMap": {
+          "$ref": "#/$defs/contentMap"
+        },
+        "layout": false,
+        "props": false,
+        "controls": false
+      },
+      "additionalProperties": true
+    },
+    "legacySlide": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "key": {
+          "type": "string"
+        },
+        "slideKey": {
+          "type": "string"
+        },
+        "logicalIndex": {
+          "type": "number"
+        },
+        "layout": {
+          "type": "string"
+        },
+        "props": {
+          "type": "object"
+        },
+        "selectedVariant": {
+          "type": "string"
+        },
+        "variants": {
+          "type": "array",
+          "minItems": 3,
+          "maxItems": 3,
+          "items": {
+            "$ref": "#/$defs/legacyVariant"
+          }
+        },
+        "media": false,
+        "copy": {
+          "type": "object"
+        },
+        "needsVisual": {
+          "type": "boolean"
+        },
+        "imageGen": {
+          "type": "boolean"
+        },
+        "needsImageGen": {
+          "type": "boolean"
+        },
+        "plannedImages": {
+          "type": [
+            "boolean",
+            "number"
+          ]
+        },
+        "providedImages": {
+          "oneOf": [
+            {
+              "type": "boolean"
+            },
+            {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            }
+          ]
+        }
+      },
+      "oneOf": [
+        {
+          "required": [
+            "layout"
+          ],
+          "not": {
+            "required": [
+              "variants"
+            ]
+          }
+        },
+        {
+          "required": [
+            "selectedVariant",
+            "variants"
+          ],
+          "not": {
+            "anyOf": [
+              {
+                "required": [
+                  "layout"
+                ]
+              },
+              {
+                "required": [
+                  "props"
+                ]
+              }
+            ]
+          }
+        }
+      ],
+      "additionalProperties": true
+    },
+    "v2Slide": {
+      "type": "object",
+      "required": [
+        "content",
+        "selectedVariant",
+        "variants"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "content": {
+          "type": "object",
+          "properties": {
+            "views": false,
+            "variants": false,
+            "variantContent": false
+          },
+          "additionalProperties": true
+        },
+        "selectedVariant": {
+          "type": "string",
+          "minLength": 1
+        },
+        "variants": {
+          "type": "array",
+          "minItems": 4,
+          "maxItems": 4,
+          "prefixItems": [
+            {
+              "$ref": "#/$defs/templateVariant"
+            },
+            {
+              "$ref": "#/$defs/templateVariant"
+            },
+            {
+              "$ref": "#/$defs/templateVariant"
+            },
+            {
+              "$ref": "#/$defs/bespokeVariant"
+            }
+          ],
+          "items": false
+        },
+        "layout": false,
+        "props": false,
+        "media": false,
+        "views": false
+      },
+      "additionalProperties": true
+    }
+  }
+}

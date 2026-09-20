@@ -1,0 +1,15 @@
+{
+  "skill_name": "debug-incident-protocol",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "A full test run hung: two timeouts (900s and 300s) burned for nothing. Localize where it hung and explain how to fix it.",
+      "expected_output": "Don't reason statically (\"this test is instant\"). Progress markers: add \"=== stage N ===\" at the start of blocks → it hung INSIDE the last block with a marker. Progress to a file, not a pipe. Isolate the suspect with a small timeout (30-60s), not the whole suite. Check infrastructure first (BeforeAll/dot-sourcing/network/interactive). Compare against the last successful run (git diff)."
+    },
+    {
+      "id": 2,
+      "prompt": "User: \"the theme is still broken, the click doesn't switch it\". We fixed and verified it yesterday. What now?",
+      "expected_output": "Cache masking: check the server actually SERVES the fixed bytes (curl + grep for the edit's marker line). Then check the process was really restarted (CreationDate > file LastWriteTime; PID trace chain). Then run the scenario verbatim without reload (recovery paths mask bugs). An anomaly is a bug until proven otherwise."
+    }
+  ]
+}

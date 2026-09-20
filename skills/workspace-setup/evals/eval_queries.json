@@ -1,0 +1,42 @@
+[
+  {
+    "query": "Поставь AGGG2.0 на новую машину с нуля",
+    "should_trigger": true
+  },
+  {
+    "query": "Обнови воркспейс до свежей версии",
+    "should_trigger": true
+  },
+  {
+    "query": "Перенеси AGGG2.0 на другой диск/машину",
+    "should_trigger": true
+  },
+  {
+    "query": "Собери архив для шаринга с паролем",
+    "should_trigger": true
+  },
+  {
+    "query": "Проверь здоровье после установки",
+    "should_trigger": true
+  },
+  {
+    "query": "doctor показывает ошибку — разберись",
+    "should_trigger": true
+  },
+  {
+    "query": "Как пользоваться Camoufox для ресёрча?",
+    "should_trigger": false
+  },
+  {
+    "query": "Найди символ в базе проекта",
+    "should_trigger": false
+  },
+  {
+    "query": "Сделай рефакторинг монолита",
+    "should_trigger": false
+  },
+  {
+    "query": "Что сломает моя правка?",
+    "should_trigger": false
+  }
+]

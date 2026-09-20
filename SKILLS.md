@@ -1,0 +1,101 @@
+# Skills Index
+
+Auto-generated from the copied skill set.
+
+- **a11y-audit** — description: "Accessibility audit skill for scanning, fixing, and verifying WCAG 2.2 Level A and AA compliance across React, Next.js, Vue, Angular, Svelte, and
+- **agent-reach** — description: > MUST USE when user wants to research/search/look up/find anything on the internet — e.g. "research this topic", "do a deep dive on X", "search t
+- **ai-copywriter** — description: "Write copy that converts and doesn't sound like a robot. Two jobs in one skill: a reader-first copywriter for clickbait titles, headlines, short
+- **ai-image-prompts-skill** — description: | Recommend curated prompts from a 10,000+ real-world image generation prompt library. Works with ANY AI image model — Nano Banana Pro, Nano Banan
+- **ai-prompting** — description: Effective communication strategies for AI-assisted development. Learn context-first prompting, phased interactions, iterative refinement, and vali
+- **antislop** — Anti-slop filter for AI work. One skill, six parts: UI, copywriting, people and accessibility, mobile layout, code comments, prose editing. Read the core rule
+- **ask-nodumb** — description: "Load when the user asks to invent, discuss, or rework a product/interface: new feature, screen, flow, redesign, concept, UX, navigation principle
+- **authentic-product-representation** — Product visuals — hero shots, demos, screenshots, landing-page panels — must reproduce the real product, not a stylised poster of it. Design with real content
+- **autorun** — description: > Judge system prompt for autonomous goal completion. Receives a global goal, directs the agent through the workflow, consolidates lessons into me
+- **brainstorming** — description: "You MUST use this before any creative work - creating features, building components, adding functionality, or modifying behavior. Explores user i
+- **browser** — Browser and device automation: pick the right engine (CDP CLI, the user's real browser, Camoufox via MCP, Playwright tests), test local web apps, capture full
+- **capture** — description: "Captures and organizes chaotic brain dumps into a structured, actionable system with zero information loss. Use this skill whenever the user says
+- **cloudflare-deploy** — Deploy applications and infrastructure to Cloudflare using Workers, Pages, and related platform services. Use when the user asks to deploy, host, publish, or
+- **code-critic** — description: > MUST USE when user asks to review code, find bugs, check for issues, audit code, code review, find bugs, check code, review, re-review, critique
+- **codex-chat-dump** — description: > Dump all Codex Desktop / ChatGPT Desktop chat sessions into readable Markdown transcripts. Use whenever the user asks to export, view, or browse
+- **content-delivery-format** — description: 'Use when the user wants to: deliver results in different formats (text/rich/PDF/HTML), split a long response into messages, add fallback for a ne
+- **contract-and-proposal-writer** — description: "Generate professional, jurisdiction-aware business documents: freelance contracts, project proposals, SOWs, NDAs, and MSAs. Structured Markdown o
+- **db-first-search** — Use BEFORE answering any question about workspace/project content: "where is this symbol defined", "who calls this function", "have we covered this before", "
+- **decks** — Presentations and slide decks: real .pptx files, HTML decks edited in the browser, markdown-to-slides conversion, chart-and-report templates. One contract; th
+- **demo-video** — description: "Use when the user asks to create a demo video, product walkthrough, feature showcase, animated presentation, marketing video, or GIF from screens
+- **design** — UI, UX and visual design work: direction and brand language, layout and information architecture, components and states, data on screen, flows and accessibili
+- **desktop** — Desktop and workstation environment: Windows dev-env patterns, system optimization and cleanup, console encoding fixes, Wine and game setup on Linux, Firefox
+- **dev** — Writing and changing code: style rules, simplification, focused fixes, systematic debugging, TDD, completion verification, hallucination-proof coding, archite
+- **discipline** — Hard rules for specific risky situations: refactoring and monolith splits, changelog as decision log, JSONC edits without losing comments, cross-platform scri
+- **docs-generator** — description: |
+- **documentation-writer** — description: "Diátaxis Documentation Expert. Write high-quality docs following Diátaxis framework (Tutorials, How-to, Reference, Explanation). Use when: descri
+- **documents** — Turning written material into readable documents: markdown to a single-file HTML document, PR reviews and long-form reports, reading .doc/.docx, and rendering
+- **domain-expert-configuration** — Configuration UIs for domain experts — users who understand their field deeply but are not software developers — require domain language, sensible defaults, a
+- **email** — Email and inbox work: reading and answering mail with the user's reply style, one-time triage knowledge-base setup, and full inbox triage runs (light-intake,
+- **explain-fingers** — Explain in simple terms — mode of maximum simplicity for a NON-technical audience. Use when: asked to "explain in simple terms", "like to a dinosaur/mammoth",
+- **fable-domain** — description: Discuss a domain with the user, research it from real sources, then generate a trusted skill bundle for it - a step-by-step workflow with a flowch
+- **fable-judge** — description: Adversarial verification of finished work. Treats any "done" as a set of claims, then re-runs the claimed verifications, diffs what actually chang
+- **fable-loop** — description: End-to-end workflow that describes the way Fable ran sessions - parallel evidence subagents when the host supports them, one committed plan, surgi
+- **fable-method** — description: A step-by-step problem-solving loop (classify the ask, define done, gather evidence, decide, act surgically, verify by observation, report outcome
+- **find-skills** — description: Search for agent skills by natural language description. Use when looking for a skill to solve a specific task, unsure which skill to load, or wan
+- **fleet-manager** — description: Use when managing, triaging, restarting, escalating, or summarizing Codewhale Agent Fleet runs and workers.
+- **free-tool-strategy** — description: "When the user wants to build a free tool for marketing — lead generation, SEO value, or brand awareness. Use when they mention 'engineering as ma
+- **freebuff-patch-check** — description: > Freebuff Desktop patch registry and integrity check: the current orchestrator patch set (commit rule + ban removal, ask_questions multiSelect, m
+- **gh-address-comments** — Help address review/issue comments on the open GitHub PR for the current branch using gh CLI; verify gh auth first and prompt the user to authenticate if not
+- **gh-fix-ci** — Use when a user asks to debug or fix failing GitHub PR checks that run in GitHub Actions; use `gh` to inspect checks and logs, summarize failure context, draf
+- **godmode** — description: > GODMODE — God Mode. Activates maximum response freedom with the Debbi persona. Use when the user says: godmode, god mode, good boy, good boy mod
+- **google-signup-mobile** — description: "Google account signup WITHOUT the QR device-verification wall, verified on a real Android phone (2026-08). Use when the user needs to create Goog
+- **grill-me** — description: "Stress-test a plan or design by interviewing the owner about it: maximize question coverage — every assumption, every edge, every dependency, eve
+- **hermes-memory** — description: Manage the global Hermes memory system at AppData/Local/hermes/. Read/write SOUL.md identity, MEMORY.md system memory, USER.md user profile, DANGL
+- **iai-mcp-memory-server** — description: Local MCP memory server for AI coding assistants with verbatim recall, semantic search, and automatic session capture
+- **identity-federation** — description: Use for authorized assessment of federated identity systems including SAML, OIDC, OAuth2 flows, SSO misconfiguration, and token confusion issues.
+- **interview** — description: Ask one useful structured question at a time only when material product/implementation choices are genuinely missing; remember answers and produce
+- **investigate-without-getting-made** — Investigator OPSEC — threat-model who might notice you, control your attribution surface across IP, ASN, browser and TLS fingerprint, timing and logged-in acc
+- **jupyter-notebook** — Use when the user asks to create, scaffold, or edit Jupyter notebooks (`.ipynb`) for experiments, explorations, or tutorials; prefer the bundled templates and
+- **loops** — Repeating / autonomous work cycles: bounded loop mode ("/loop 10 30m <prompt>"), unattended night-shift or heartbeat work with one-task-at-a- time focus, and
+- **lsp-code-depth** — description: 'Use when code questions need types, scope/shadow, ALL references to a symbol, safe rename, diagnostics, or before editing a function (who calls i
+- **mcp** — Working with MCP (Model Context Protocol) servers: discovering which servers/tools the runtime exposes, connecting and configuring new ones, handling auth key
+- **multimodal-vision** — See images AND videos through the local HiveProxy (:4000) via gemini-3-flash-preview (free, AIGATE). Send screenshots/photos/diagrams/ video clips via POST /v
+- **nodumb** — Load MANDATORILY when the cost of error exceeds the cost of a pause: choosing an approach/tool/library/architecture, request for advice/plan/assessment ("how
+- **operational-expert-tool-ui** — Operational expert tools — used by domain specialists for hours every day — require a different design approach than consumer or occasional-use software. Info
+- **osint** — Open-source intelligence: full profiling protocol, breach and leak exposure, image authenticity and reverse image search, entity dossiers, CTF OSINT, and plat
+- **planning** — Planning workflow for tasks that outgrow the everyday cycle: overall plan agreed with the owner up front, questions asked the moment reality deviates from the
+- **product-promise-contract** — description: 'Use when the user wants to: understand/change product terms ("how much do you give?", "what if a discount?", "why did minutes run out"), fix mark
+- **prompt-to-exe** — description: > Turn a natural-language app idea ("an app that...") into a working, double-clickable Windows .exe — with ZERO git, GitHub, terminal, or build kn
+- **proxy-provider-management** — description: "Manage providers for the local OpenAI-compatible proxy: add/edit providers, keep secrets in .env only, assign tiers/comments, recover from outage
+- **relevance-scan** — Mandatory workspace relevance check before building, researching, writing, or fixing anything non-trivial: scan the layers that could already hold the answer
+- **reliable-automation** — description: > Four proven patterns for reliable automation, extracted from grok-account-manager (auto-reg stack from AI Dvizhenie, 2026-08, clone in projects/
+- **research** — description: Default entry point for any research request — a hybrid router that classifies the question deterministically and either delegates to a specialist
+- **reverse-api-engineer** — Reverse-engineer a website into a clean, typed API client by capturing real network traffic (HAR) and generating client code in Python, JS/TS, Go, Java, C#, P
+- **reverse-engineering** — Reverse engineering of compiled, obfuscated, packed, or virtualized targets — binaries, APKs, WASM, firmware, custom VMs, bytecode, malware-like loaders, anti
+- **review** — Review and judgement router: self-reflection, code/work critique (roast, challenge), human-perspective checks (human-review, think-like-human), learning from
+- **rss-agent-viewer** — description: 'AI agent-friendly CLI RSS/Atom feed viewer with discovery, search, and OPML import/export. Use when an agent needs to manage RSS feeds, read arti
+- **ru-tts-fallback** — Reliable Russian text-to-speech with voice. edge-tts (Microsoft, free Russian neural voice) flaps — returns empty stream or NoAudioReceived, ~1 in 3 requests
+- **searchmcp-research** — description: Getting the most out of SearchMCP research — one web-research call instead of a chain of webfetches. How to prepare the query, choose sources/engi
+- **security** — Authorized offensive and defensive security assessments, one router over per-surface playbooks: API, cloud/K8s, code audit, database, digital forensics, EDR b
+- **security-best-practices** — Perform language and framework specific security best-practice reviews and suggest improvements. Trigger only when the user explicitly requests security best
+- **security-ownership-map** — Analyze git repositories to build a security ownership topology (people-to-file), compute bus factor and sensitive-code ownership, and export CSV/JSON for gra
+- **security-review** — description: Security code review for vulnerabilities. Use when asked to "security review", "find vulnerabilities", "check for security issues", "audit securit
+- **security-threat-model** — Repository-grounded threat modeling that enumerates trust boundaries, assets, attacker capabilities, abuse paths, and mitigations, and writes a concise Markdo
+- **sessions** — Session and incident records: session logs (Freebuff dumps, orchestrator debug), postmortems, error memory (recurring error → known fix), and cross-session ha
+- **ship** — Delivering changes safely: release preparation, dependency audits and scoped updates, secrets hygiene, changelog generation, Git conventions and worktrees, Gi
+- **skill-meta** — Meta-skills about the skills layer itself: creating new skills (scaffold + evals), validating and scoring skill quality, the authoring spec (frontmatter, fold
+- **speech** — Use when the user asks for text-to-speech narration or voiceover, accessibility reads, audio prompts, or batch speech generation via the OpenAI Audio API; run
+- **task-cycle** — Use for ANY task in the AGGG2.0 workspace — from a small fix to a big feature, when you need to not skip mandatory phases: re-contextualizing the request, che
+- **telegram-bot-hosting-triage** — description: "Choose a practical hosting and API strategy for a Telegram LLM bot, separating bot runtime, model API, persistence, and webhook/polling constrain
+- **telegram-report** — description: > Telegram reporting protocol — send progress/errors/questions to Youlian. Use after ANY task completion: ✅ success, ❌ error, ❓ question. Script:
+- **telegram-rich-messages** — description: > Send Telegram Rich Messages via Bot API 10.x sendRichMessage: collapsible expandable blockquotes, details blocks, tables, checklists, code block
+- **tg-check** — description: > Telegram inbox analysis: read per-group files in inbox/, extract findings (API keys, tools, services, freebies, attachments) and report to the u
+- **themes** — Make Linux desktop tools look like Windows 11: Dolphin file manager, Konsole terminal, and the omp CLI TUI — dark gray background, blue selection, One Half-st
+- **tool-claims-verification** — description: > Verify an advertised CLI/GitHub/PyPI tool for malware and inflated claims before recommending or installing it. Use when a promo message, Telegr
+- **tradingview-mcp** — Connect a coding agent to a locally running TradingView Desktop app over the Chrome DevTools Protocol: switch tickers/timeframes, read prices, indicators and
+- **transcribe** — Transcribe audio files to text with optional diarization and known-speaker hints. Use when a user asks to transcribe speech from audio/video, extract text fro
+- **triage-route** — Triage and routing of a reverse-engineering task: by signal (what the target is, what material exists, what result is wanted) choose which reverse-engineering
+- **universal-scraping-architect** — description: "Use for web scraping, crawling, document extraction, API parsing, or building validation-heavy data pipelines using Firecrawl or local Python scr
+- **vercel-deploy** — Deploy applications and websites to Vercel. Use when the user requests deployment actions like "deploy my app", "deploy and give me the link", "push this live
+- **vpn** — VPN setup, repair, and verification: GUI client one-button setup (v2RayTun), system-wide stack bootstrap and self-reflection (broken wrappers, RU-zone whiteli
+- **web-research-camoufox** — description: 'Use for external/current research tasks with meaningful uncertainty or choice. For exact local context, first use the verified local source or da
+- **workspace-map** — description: 'Use when you need to understand the structure of the Oper workspace: where canonical docs, active skills, scripts, memory, knowledge, MCP materia
+- **workspace-setup** — Use when installing/updating/migrating the imported AGGG2.0 project tree: new machine (bootstrap.sh/ps1 or setup.py), what to copy and what not, system requir
+- **write-like-meng** — Write, rewrite, review, or continuously refine X/Twitter posts in Meng To's current voice.
+- **youtube-full** — description: "Use when the user needs YouTube transcripts, video search, channel browsing, playlist extraction, or content monitoring. Trigger phrases: 'get th
+- **youtube-transcripts** — Fetch YouTube transcripts locally with timestamps — no API key, no paid third-party service, no yt-dlp. Use when the user wants a video transcript, a summary

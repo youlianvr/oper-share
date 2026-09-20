@@ -1,0 +1,19 @@
+# secrets and live config — never commit
+.env
+.env.*
+*.key
+*.pem
+credentials*
+*token*
+API_KEYS*
+
+# session dumps and local state
+.freebuff/
+*.session
+
+# personal memory created during birth (commit only if user wants)
+# MEMORY.md
+
+# OS / editor noise
+Thumbs.db
+.DS_Store

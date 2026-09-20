@@ -1,0 +1,735 @@
+{
+  "schemaVersion": 2,
+  "title": "AI 产品组合策略",
+  "goal": "面向管理层说明 AI 产品组合的优先级、投入节奏和落地路径",
+  "audience": "管理层",
+  "owner": "产品策略团队",
+  "randomSeed": "theme02-example",
+  "workflowRunId": "theme02-example-run",
+  "pageCount": 5,
+  "themePack": "theme02",
+  "variantOutputMode": "comparison",
+  "slides": [
+    {
+      "id": "s1",
+      "content": {
+        "presentation": {
+          "title": "AI 产品组合策略",
+          "summary": "面向管理层说明 AI 产品组合的优先级、投入节奏和落地路径",
+          "takeaway": "面向管理层说明 AI 产品组合的优先级、投入节奏和落地路径",
+          "items": [
+            {
+              "id": "goal",
+              "label": "核心目标",
+              "value": 100,
+              "displayValue": "100%",
+              "unit": "%",
+              "detail": "100% · 面向管理层"
+            },
+            {
+              "id": "owner",
+              "label": "负责人",
+              "value": 80,
+              "displayValue": "80%",
+              "unit": "%",
+              "detail": "80% · 产品策略团队负责AI 产品组合策略"
+            },
+            {
+              "id": "audience",
+              "label": "目标受众",
+              "value": 90,
+              "displayValue": "90%",
+              "unit": "%",
+              "detail": "90% · 面向管理层"
+            }
+          ]
+        },
+        "media": [],
+        "meta": {
+          "brand": "产品策略团队",
+          "pageLabel": "1 / 5",
+          "unit": "",
+          "panelTitle": "KEY FACTS",
+          "date": ""
+        }
+      },
+      "selectedVariant": "v1",
+      "variants": [
+        {
+          "id": "v1",
+          "kind": "template",
+          "layout": "theme02_page001",
+          "props": {
+            "imageCount": 0
+          },
+          "contentMap": {
+            "title": "presentation.title",
+            "subtitle": "presentation.summary",
+            "stat.unit": "meta.unit"
+          }
+        },
+        {
+          "id": "v2",
+          "kind": "template",
+          "layout": "theme02_page002",
+          "props": {},
+          "contentMap": {
+            "title": "presentation.title",
+            "subtitle": "presentation.summary",
+            "stats": {
+              "source": "presentation.items",
+              "fields": {
+                "value": "displayValue",
+                "unit": "unit",
+                "label": "label"
+              }
+            }
+          }
+        },
+        {
+          "id": "v3",
+          "kind": "template",
+          "layout": "theme02_page003",
+          "props": {},
+          "contentMap": {
+            "title": "presentation.title",
+            "subtitle": "presentation.summary",
+            "stat.unit": "meta.unit",
+            "subStats": {
+              "source": "presentation.items",
+              "fields": {
+                "value": "displayValue",
+                "label": "label"
+              }
+            }
+          }
+        },
+        {
+          "id": "v4",
+          "kind": "bespoke",
+          "adjustable": false,
+          "composition": {
+            "designIntent": {
+              "objective": "建立AI 产品组合策略的汇报范围",
+              "audience": "管理层",
+              "narrativeRole": "封面定调",
+              "emphasis": "AI 产品组合策略",
+              "rationale": "使用单一标题中心和两条关键信息建立清晰层级",
+              "compositionFamily": "hero"
+            },
+            "background": "default",
+            "elements": [
+              {
+                "id": "title",
+                "type": "text",
+                "grid": {
+                  "column": 1,
+                  "row": 1,
+                  "width": 10,
+                  "height": 2
+                },
+                "role": "title",
+                "text": ""
+              },
+              {
+                "id": "points",
+                "type": "list",
+                "grid": {
+                  "column": 1,
+                  "row": 4,
+                  "width": 8,
+                  "height": 3
+                },
+                "items": []
+              }
+            ]
+          },
+          "contentMap": {
+            "elements[0].text": "presentation.title",
+            "elements[1].items": {
+              "source": "presentation.items",
+              "fields": {
+                "title": "label",
+                "body": "detail"
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "content": {
+        "presentation": {
+          "title": "AI 产品组合策略 · 2",
+          "summary": "面向管理层说明 AI 产品组合的优先级、投入节奏和落地路径 · 第 2 页",
+          "takeaway": "面向管理层说明 AI 产品组合的优先级、投入节奏和落地路径",
+          "items": [
+            {
+              "id": "goal",
+              "label": "核心目标",
+              "value": 100,
+              "displayValue": "100%",
+              "unit": "%",
+              "detail": "100% · 推进到第 2 页"
+            },
+            {
+              "id": "owner",
+              "label": "负责人",
+              "value": 80,
+              "displayValue": "80%",
+              "unit": "%",
+              "detail": "80% · 产品策略团队负责AI 产品组合策略"
+            },
+            {
+              "id": "audience",
+              "label": "目标受众",
+              "value": 90,
+              "displayValue": "90%",
+              "unit": "%",
+              "detail": "90% · 面向管理层"
+            }
+          ]
+        },
+        "media": [],
+        "meta": {
+          "brand": "产品策略团队",
+          "pageLabel": "2 / 5",
+          "unit": "",
+          "panelTitle": "KEY FACTS",
+          "date": ""
+        }
+      },
+      "selectedVariant": "v1",
+      "variants": [
+        {
+          "id": "v1",
+          "kind": "template",
+          "layout": "theme02_page006",
+          "props": {},
+          "contentMap": {
+            "title": "presentation.title",
+            "intro": "presentation.summary"
+          }
+        },
+        {
+          "id": "v2",
+          "kind": "template",
+          "layout": "theme02_page007",
+          "props": {},
+          "contentMap": {
+            "title": "presentation.title",
+            "lead": "presentation.summary",
+            "items": {
+              "source": "presentation.items",
+              "fields": {
+                "title": "label",
+                "sub": "detail"
+              }
+            }
+          }
+        },
+        {
+          "id": "v3",
+          "kind": "template",
+          "layout": "theme02_page008",
+          "props": {},
+          "contentMap": {
+            "title": "presentation.title",
+            "data": {
+              "source": "presentation.items",
+              "fields": {
+                "label": "label",
+                "value": "value",
+                "secondary": "value"
+              }
+            },
+            "stats": {
+              "source": "presentation.items",
+              "fields": {
+                "value": "displayValue",
+                "unit": "unit",
+                "caption": "detail"
+              }
+            }
+          }
+        },
+        {
+          "id": "v4",
+          "kind": "bespoke",
+          "adjustable": false,
+          "composition": {
+            "designIntent": {
+              "objective": "解释AI 产品组合策略第 2 页的核心信息",
+              "audience": "管理层",
+              "narrativeRole": "论证推进",
+              "emphasis": "面向管理层说明 AI 产品组合的优先级、投入节奏和落地路径",
+              "rationale": "使用单一标题中心和两条关键信息建立清晰层级",
+              "compositionFamily": "editorial"
+            },
+            "background": "default",
+            "elements": [
+              {
+                "id": "title",
+                "type": "text",
+                "grid": {
+                  "column": 1,
+                  "row": 1,
+                  "width": 10,
+                  "height": 2
+                },
+                "role": "title",
+                "text": ""
+              },
+              {
+                "id": "points",
+                "type": "list",
+                "grid": {
+                  "column": 1,
+                  "row": 4,
+                  "width": 8,
+                  "height": 3
+                },
+                "items": []
+              }
+            ]
+          },
+          "contentMap": {
+            "elements[0].text": "presentation.title",
+            "elements[1].items": {
+              "source": "presentation.items",
+              "fields": {
+                "title": "label",
+                "body": "detail"
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "content": {
+        "presentation": {
+          "title": "AI 产品组合策略 · 3",
+          "summary": "面向管理层说明 AI 产品组合的优先级、投入节奏和落地路径 · 第 3 页",
+          "takeaway": "面向管理层说明 AI 产品组合的优先级、投入节奏和落地路径",
+          "items": [
+            {
+              "id": "goal",
+              "label": "核心目标",
+              "value": 100,
+              "displayValue": "100%",
+              "unit": "%",
+              "detail": "100% · 推进到第 3 页"
+            },
+            {
+              "id": "owner",
+              "label": "负责人",
+              "value": 80,
+              "displayValue": "80%",
+              "unit": "%",
+              "detail": "80% · 产品策略团队负责AI 产品组合策略"
+            },
+            {
+              "id": "audience",
+              "label": "目标受众",
+              "value": 90,
+              "displayValue": "90%",
+              "unit": "%",
+              "detail": "90% · 面向管理层"
+            }
+          ]
+        },
+        "media": [],
+        "meta": {
+          "brand": "产品策略团队",
+          "pageLabel": "3 / 5",
+          "unit": "",
+          "panelTitle": "KEY FACTS",
+          "date": ""
+        }
+      },
+      "selectedVariant": "v1",
+      "variants": [
+        {
+          "id": "v1",
+          "kind": "template",
+          "layout": "theme02_page021",
+          "props": {},
+          "contentMap": {
+            "unit": "meta.unit",
+            "lead": "presentation.summary",
+            "support": {
+              "source": "presentation.items",
+              "fields": {
+                "value": "displayValue",
+                "unit": "unit",
+                "label": "label"
+              }
+            }
+          }
+        },
+        {
+          "id": "v2",
+          "kind": "template",
+          "layout": "theme02_page022",
+          "props": {},
+          "contentMap": {
+            "support": {
+              "source": "presentation.items",
+              "fields": {
+                "value": "displayValue",
+                "unit": "unit",
+                "label": "label"
+              }
+            }
+          }
+        },
+        {
+          "id": "v3",
+          "kind": "template",
+          "layout": "theme02_page023",
+          "props": {},
+          "contentMap": {
+            "title": "presentation.title",
+            "hero.unit": "meta.unit",
+            "stats": {
+              "source": "presentation.items",
+              "fields": {
+                "value": "displayValue",
+                "unit": "unit",
+                "label": "label"
+              }
+            }
+          }
+        },
+        {
+          "id": "v4",
+          "kind": "bespoke",
+          "adjustable": false,
+          "composition": {
+            "designIntent": {
+              "objective": "解释AI 产品组合策略第 3 页的核心信息",
+              "audience": "管理层",
+              "narrativeRole": "论证推进",
+              "emphasis": "面向管理层说明 AI 产品组合的优先级、投入节奏和落地路径",
+              "rationale": "使用单一标题中心和两条关键信息建立清晰层级",
+              "compositionFamily": "split"
+            },
+            "background": "default",
+            "elements": [
+              {
+                "id": "title",
+                "type": "text",
+                "grid": {
+                  "column": 1,
+                  "row": 1,
+                  "width": 10,
+                  "height": 2
+                },
+                "role": "title",
+                "text": ""
+              },
+              {
+                "id": "points",
+                "type": "list",
+                "grid": {
+                  "column": 1,
+                  "row": 4,
+                  "width": 8,
+                  "height": 3
+                },
+                "items": []
+              }
+            ]
+          },
+          "contentMap": {
+            "elements[0].text": "presentation.title",
+            "elements[1].items": {
+              "source": "presentation.items",
+              "fields": {
+                "title": "label",
+                "body": "detail"
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "content": {
+        "presentation": {
+          "title": "AI 产品组合策略 · 4",
+          "summary": "面向管理层说明 AI 产品组合的优先级、投入节奏和落地路径 · 第 4 页",
+          "takeaway": "面向管理层说明 AI 产品组合的优先级、投入节奏和落地路径",
+          "items": [
+            {
+              "id": "goal",
+              "label": "核心目标",
+              "value": 100,
+              "displayValue": "100%",
+              "unit": "%",
+              "detail": "100% · 推进到第 4 页"
+            },
+            {
+              "id": "owner",
+              "label": "负责人",
+              "value": 80,
+              "displayValue": "80%",
+              "unit": "%",
+              "detail": "80% · 产品策略团队负责AI 产品组合策略"
+            },
+            {
+              "id": "audience",
+              "label": "目标受众",
+              "value": 90,
+              "displayValue": "90%",
+              "unit": "%",
+              "detail": "90% · 面向管理层"
+            }
+          ]
+        },
+        "media": [],
+        "meta": {
+          "brand": "产品策略团队",
+          "pageLabel": "4 / 5",
+          "unit": "",
+          "panelTitle": "KEY FACTS",
+          "date": ""
+        }
+      },
+      "selectedVariant": "v1",
+      "variants": [
+        {
+          "id": "v1",
+          "kind": "template",
+          "layout": "theme02_page044",
+          "props": {},
+          "contentMap": {
+            "title": "presentation.title",
+            "steps": {
+              "source": "presentation.items",
+              "fields": {
+                "title": "label",
+                "desc": "detail"
+              }
+            }
+          }
+        },
+        {
+          "id": "v2",
+          "kind": "template",
+          "layout": "theme02_page045",
+          "props": {},
+          "contentMap": {
+            "title": "presentation.title"
+          }
+        },
+        {
+          "id": "v3",
+          "kind": "template",
+          "layout": "theme02_page046",
+          "props": {},
+          "contentMap": {
+            "title": "presentation.title"
+          }
+        },
+        {
+          "id": "v4",
+          "kind": "bespoke",
+          "adjustable": false,
+          "composition": {
+            "designIntent": {
+              "objective": "解释AI 产品组合策略第 4 页的核心信息",
+              "audience": "管理层",
+              "narrativeRole": "论证推进",
+              "emphasis": "面向管理层说明 AI 产品组合的优先级、投入节奏和落地路径",
+              "rationale": "使用单一标题中心和两条关键信息建立清晰层级",
+              "compositionFamily": "editorial"
+            },
+            "background": "default",
+            "elements": [
+              {
+                "id": "title",
+                "type": "text",
+                "grid": {
+                  "column": 1,
+                  "row": 1,
+                  "width": 10,
+                  "height": 2
+                },
+                "role": "title",
+                "text": ""
+              },
+              {
+                "id": "points",
+                "type": "list",
+                "grid": {
+                  "column": 1,
+                  "row": 4,
+                  "width": 8,
+                  "height": 3
+                },
+                "items": []
+              }
+            ]
+          },
+          "contentMap": {
+            "elements[0].text": "presentation.title",
+            "elements[1].items": {
+              "source": "presentation.items",
+              "fields": {
+                "title": "label",
+                "body": "detail"
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "s5",
+      "content": {
+        "presentation": {
+          "title": "AI 产品组合策略 · 5",
+          "summary": "面向管理层说明 AI 产品组合的优先级、投入节奏和落地路径 · 第 5 页",
+          "takeaway": "面向管理层说明 AI 产品组合的优先级、投入节奏和落地路径",
+          "items": [
+            {
+              "id": "goal",
+              "label": "核心目标",
+              "value": 100,
+              "displayValue": "100%",
+              "unit": "%",
+              "detail": "100% · 推进到第 5 页"
+            },
+            {
+              "id": "owner",
+              "label": "负责人",
+              "value": 80,
+              "displayValue": "80%",
+              "unit": "%",
+              "detail": "80% · 产品策略团队负责AI 产品组合策略"
+            },
+            {
+              "id": "audience",
+              "label": "目标受众",
+              "value": 90,
+              "displayValue": "90%",
+              "unit": "%",
+              "detail": "90% · 面向管理层"
+            }
+          ]
+        },
+        "media": [],
+        "meta": {
+          "brand": "产品策略团队",
+          "pageLabel": "5 / 5",
+          "unit": "",
+          "panelTitle": "KEY FACTS",
+          "date": ""
+        }
+      },
+      "selectedVariant": "v1",
+      "variants": [
+        {
+          "id": "v1",
+          "kind": "template",
+          "layout": "theme02_page072",
+          "props": {},
+          "contentMap": {
+            "title": "presentation.title",
+            "lead": "presentation.summary",
+            "series": {
+              "source": "presentation.items",
+              "fields": {
+                "label": "label"
+              }
+            }
+          }
+        },
+        {
+          "id": "v2",
+          "kind": "template",
+          "layout": "theme02_page073",
+          "props": {},
+          "contentMap": {
+            "title": "presentation.title",
+            "lead": "presentation.summary",
+            "points": {
+              "source": "presentation.items",
+              "fields": {
+                "value": "displayValue",
+                "unit": "unit",
+                "label": "label",
+                "note": "detail"
+              }
+            }
+          }
+        },
+        {
+          "id": "v3",
+          "kind": "template",
+          "layout": "theme02_page074",
+          "props": {},
+          "contentMap": {
+            "signature.date": "meta.date"
+          }
+        },
+        {
+          "id": "v4",
+          "kind": "bespoke",
+          "adjustable": false,
+          "composition": {
+            "designIntent": {
+              "objective": "解释AI 产品组合策略第 5 页的核心信息",
+              "audience": "管理层",
+              "narrativeRole": "论证推进",
+              "emphasis": "面向管理层说明 AI 产品组合的优先级、投入节奏和落地路径",
+              "rationale": "使用单一标题中心和两条关键信息建立清晰层级",
+              "compositionFamily": "split"
+            },
+            "background": "default",
+            "elements": [
+              {
+                "id": "title",
+                "type": "text",
+                "grid": {
+                  "column": 1,
+                  "row": 1,
+                  "width": 10,
+                  "height": 2
+                },
+                "role": "title",
+                "text": ""
+              },
+              {
+                "id": "points",
+                "type": "list",
+                "grid": {
+                  "column": 1,
+                  "row": 4,
+                  "width": 8,
+                  "height": 3
+                },
+                "items": []
+              }
+            ]
+          },
+          "contentMap": {
+            "elements[0].text": "presentation.title",
+            "elements[1].items": {
+              "source": "presentation.items",
+              "fields": {
+                "title": "label",
+                "body": "detail"
+              }
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

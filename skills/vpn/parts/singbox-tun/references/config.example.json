@@ -1,0 +1,60 @@
+{
+  "log": {
+    "level": "info",
+    "timestamp": true
+  },
+  "dns": {
+    "servers": [
+      { "type": "tls", "tag": "remote", "server": "1.1.1.1", "detour": "auto" }
+    ]
+  },
+  "inbounds": [
+    {
+      "type": "tun",
+      "tag": "tun-in",
+      "interface_name": "sing-tun",
+      "address": ["172.19.0.1/30"],
+      "auto_route": true,
+      "strict_route": true,
+      "stack": "system"
+    }
+  ],
+  "outbounds": [
+    {
+      "type": "socks",
+      "tag": "md1",
+      "server": "154.203.229.181",
+      "server_port": 62645,
+      "version": "5",
+      "username": "YOUR_PROXY_USER",
+      "password": "YOUR_PROXY_PASS"
+    },
+    {
+      "type": "socks",
+      "tag": "md2",
+      "server": "193.8.167.61",
+      "server_port": 63831,
+      "version": "5",
+      "username": "YOUR_PROXY_USER",
+      "password": "YOUR_PROXY_PASS"
+    },
+    {
+      "type": "urltest",
+      "tag": "auto",
+      "outbounds": ["md1", "md2"],
+      "url": "http://www.gstatic.com/generate_204",
+      "interval": "1m",
+      "tolerance": 50
+    }
+  ],
+  "route": {
+    "rules": [
+      { "action": "sniff" },
+      { "port": 53, "action": "hijack-dns" },
+      { "ip_is_private": true, "action": "direct" }
+    ],
+    "auto_detect_interface": true,
+    "default_domain_resolver": "remote",
+    "final": "auto"
+  }
+}

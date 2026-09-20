@@ -1,0 +1,7 @@
+references/*.json
+references/.last-updated
+node_modules/
+dist/
+.env
+.git/
+pnpm-lock.yaml

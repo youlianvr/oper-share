@@ -1,0 +1,42 @@
+[
+  {
+    "query": "Какой тип у этой переменной и её связи?",
+    "should_trigger": true
+  },
+  {
+    "query": "Найди ВСЕ места, где используется функция process_audio",
+    "should_trigger": true
+  },
+  {
+    "query": "Безопасно переименуй символ Y с предпросмотром",
+    "should_trigger": true
+  },
+  {
+    "query": "Проверь мой файл на ошибки после правок",
+    "should_trigger": true
+  },
+  {
+    "query": "Кто вызывает этот метод перед его удалением?",
+    "should_trigger": true
+  },
+  {
+    "query": "Покажи структуру файла bot.py",
+    "should_trigger": true
+  },
+  {
+    "query": "Найди в базе, где определён символ",
+    "should_trigger": false
+  },
+  {
+    "query": "Что сломает правка из 5 файлов?",
+    "should_trigger": false
+  },
+  {
+    "query": "Напиши юнит-тесты для модуля",
+    "should_trigger": false
+  },
+  {
+    "query": "Сделай ревью диффа с приоритетами",
+    "should_trigger": false
+  }
+]

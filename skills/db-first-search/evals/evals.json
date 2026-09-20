@@ -1,0 +1,15 @@
+{
+  "skill_name": "db-first-search",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "I want to refactor charge_seconds, but first understand who calls it. What do I do?",
+      "expected_output": "DB-FIRST: refresh the base (search.py --refresh -r root), then search.py --calls charge_seconds / --symbol — who calls it directly. If ALL references are needed (ternary calls) — agent-lsp find_references. Don't start with grep/reading files."
+    },
+    {
+      "id": 2,
+      "prompt": "\"We discussed rate limits before — what did we conclude?\" Answer from facts, not memory.",
+      "expected_output": "findings.py search \"rate limit\" in research.db → find the records → answer with facts from the base, citing ids/sources. Session memory is not a source. If empty — honestly \"not found in the base\", don't invent."
+    }
+  ]
+}

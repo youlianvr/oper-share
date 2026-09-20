@@ -1,0 +1,42 @@
+[
+  {
+    "query": "Как в индустрии делают транскрипцию в реальном времени?",
+    "should_trigger": true
+  },
+  {
+    "query": "Найди актуальную документацию по OpenAI API",
+    "should_trigger": true
+  },
+  {
+    "query": "Проверь, правда ли что X работает так",
+    "should_trigger": true
+  },
+  {
+    "query": "Какой инструмент выбрать для миграций БД?",
+    "should_trigger": true
+  },
+  {
+    "query": "Найди первоисточник по этой теме, не пересказ",
+    "should_trigger": true
+  },
+  {
+    "query": "Сравни подходы A и B, что используют в проде",
+    "should_trigger": true
+  },
+  {
+    "query": "Где определён символ в нашем проекте?",
+    "should_trigger": false
+  },
+  {
+    "query": "Почини код по нашему стилю",
+    "should_trigger": false
+  },
+  {
+    "query": "Собери архив для шаринга",
+    "should_trigger": false
+  },
+  {
+    "query": "Что сломает моя правка из 3 файлов?",
+    "should_trigger": false
+  }
+]

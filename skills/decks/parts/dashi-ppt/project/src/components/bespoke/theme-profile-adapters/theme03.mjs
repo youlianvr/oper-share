@@ -1,0 +1,77 @@
+import {
+  COLORS as THEME03_COLORS,
+  FONTS as THEME03_FONTS,
+  RAMP as THEME03_RAMP,
+} from '../../themes/theme03/source/src/theme.js';
+import { adapter, cssVar, onColor } from '../theme-profile-core.mjs';
+
+const THEME03_FAMILY_RECIPES = {
+  hero: { frame: 'rd-masthead', surface: 'open', titleClass: 'display', titleScale: 116, quoteMode: 'pull' },
+  editorial: { frame: 'rd-editorial-rail', surface: 'open', titleClass: 'title', titleScale: 70, listMode: 'rail', quoteMode: 'pull' },
+  split: { frame: 'rd-split-rule', surface: 'open', titleClass: 'title', titleScale: 64, listMode: 'ledger' },
+  comparison: { frame: 'rd-comparison-axis', surface: 'open', titleClass: 'headline', titleScale: 58, listMode: 'comparison' },
+  process: { frame: 'rd-process-path', surface: 'open', titleClass: 'headline', titleScale: 56, listMode: 'process' },
+  matrix: { frame: 'rd-matrix-grid', surface: 'open', titleClass: 'headline', titleScale: 54, quoteMode: 'matrix' },
+  'metric-spotlight': { frame: 'rd-metric-band', surface: 'open', titleClass: 'headline', titleScale: 56, metricMode: 'band' },
+  timeline: { frame: 'rd-timeline-spine', surface: 'open', titleClass: 'headline', titleScale: 54, listMode: 'timeline' },
+  'chart-led': { frame: 'rd-chart-plot', surface: 'open', titleClass: 'headline', titleScale: 52, chartMode: 'plot' },
+};
+
+export default adapter({
+  sourceTokens: THEME03_COLORS,
+  sourcePath: 'theme03/source/src/theme.js + theme.css',
+  rootClass: 'rd-slide rd-dark',
+  familyRecipes: THEME03_FAMILY_RECIPES,
+  base: {
+    bg: cssVar('--rd-bg', '#161513'),
+    surface: cssVar('--rd-panel', '#f3f2ee'),
+    ink: cssVar('--rd-ink', '#f3f2ee'),
+    muted: cssVar('--rd-ink-2', '#b8b6b0'),
+    cardInk: '#161513',
+    cardMuted: '#5c5b57',
+    cardLine: 'rgba(22,21,19,.2)',
+    accent: cssVar('--rd-blue', '#6e85ff'),
+    accent2: cssVar('--rd-lime', THEME03_COLORS.lime),
+    line: cssVar('--rd-line', 'rgba(243,242,238,.22)'),
+    fontDisplay: THEME03_FONTS.sans,
+    fontBody: THEME03_FONTS.sans,
+    fontMono: THEME03_FONTS.mono,
+    typeScale: { kicker: 24, title: 62, subtitle: 34, body: 27, label: 24, caption: 24, metric: 104 },
+    pad: 120,
+    gap: 40,
+    radius: 0,
+    shadow: 'none',
+    cardTreatment: { padding: 28, borderWidth: 1, borderStyle: 'solid', backdropFilter: 'none' },
+    mediaTreatment: {
+      radius: 0,
+      filter: 'none',
+      overlay: 'none',
+      border: `1px solid ${cssVar('--rd-line', 'rgba(243,242,238,.22)')}`,
+    },
+    chartTreatment: {
+      grid: cssVar('--rd-line-2', 'rgba(243,242,238,.10)'),
+      label: cssVar('--rd-ink-2', '#b8b6b0'),
+      series: [cssVar('--rd-blue', '#6e85ff'), cssVar('--rd-lime', THEME03_COLORS.lime), ...THEME03_RAMP],
+      barRadius: 0,
+      strokeWidth: 6,
+    },
+    shapeTreatment: { lineWidth: 2, panelRadius: 0, panelBorderWidth: 1 },
+    decoration: 'none',
+  },
+  backgrounds: {
+    default: {},
+    surface: { bg: cssVar('--rd-panel', '#f3f2ee'), ink: '#161513', muted: '#5c5b57', line: 'rgba(22,21,19,.2)' },
+    muted: { bg: cssVar('--rd-bg', '#161513') },
+    accent: onColor(cssVar('--rd-blue', '#6e85ff'), '#0d1330', cssVar('--rd-lime', THEME03_COLORS.lime)),
+    dark: {},
+    light: {
+      rootClass: 'rd-slide',
+      bg: THEME03_COLORS.bg,
+      surface: '#ffffff',
+      ink: THEME03_COLORS.ink,
+      muted: THEME03_COLORS.ink2,
+      line: THEME03_COLORS.line,
+      accent: THEME03_COLORS.blue,
+    },
+  },
+});

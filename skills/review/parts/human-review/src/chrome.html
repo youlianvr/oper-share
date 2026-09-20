@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>human-review</title>
+  <link rel="stylesheet" href="/chrome.css">
+</head>
+<body data-session="__SESSION_ID__" data-token="__TOKEN__">
+  <div class="app">
+    <main class="stage">
+      <iframe
+        id="frame"
+        title="Artifact under review"
+        sandbox="allow-scripts allow-forms allow-modals allow-popups allow-downloads"></iframe>
+    </main>
+
+    <button type="button" id="handle" class="handle" title="Hide comments panel" aria-label="Hide comments panel">›</button>
+
+    <aside class="rail" id="rail">
+      <div class="rail-scroll">
+        <div class="rail-head">
+          <span class="section">Feedback</span>
+          <span class="dim" id="count">0</span>
+          <button type="button" id="theme" class="icon-btn" title="Switch chrome to dark" aria-label="Switch chrome to dark">☾</button>
+        </div>
+
+        <div id="compose" hidden>
+          <div class="compose">
+            <div class="compose-head">
+              <span class="chip" id="composeKind">Selection</span>
+              <span class="dim">Click to write · Esc to dismiss</span>
+            </div>
+            <p class="quote" id="composeQuote"></p>
+            <textarea id="composeText" rows="3" placeholder="What should change?"></textarea>
+            <div class="compose-actions">
+              <button type="button" id="composeAdd" class="btn-primary">Add comment <span class="key">⏎</span></button>
+              <button type="button" id="composeCancel" class="btn-ghost">Cancel</button>
+            </div>
+          </div>
+        </div>
+
+        <div id="cards" class="cards"></div>
+
+        <div id="empty" class="empty">Select text or click an element to comment on it</div>
+
+        <section id="othersBox" hidden>
+          <div class="rail-head tight">
+            <span class="section">Other pages</span>
+            <span class="dim" id="othersCount">0</span>
+          </div>
+          <div class="edit-list" id="othersList"></div>
+        </section>
+
+        <section id="editsBox" hidden>
+          <div class="rail-head tight">
+            <span class="section">Your edits</span>
+            <span class="dim" id="editCount">0</span>
+            <button type="button" id="revert" class="link-btn danger-hover">Revert all</button>
+          </div>
+          <div class="save-line" id="saveLine"><span class="dot"></span><span id="saveText"></span></div>
+          <div class="edit-list" id="editList"></div>
+        </section>
+      </div>
+
+      <div class="rail-foot">
+        <textarea id="note" rows="2" placeholder="Overall note…"></textarea>
+        <button type="button" id="send" class="send" disabled>Nothing to send yet</button>
+        <div class="agent-line" id="agentLine" hidden><span class="dot amber"></span><span id="agentText"></span></div>
+        <div class="handoff" id="handoff" hidden>
+          <p class="handoff-title">Sent — but no agent is listening yet.</p>
+          <p class="handoff-body">Paste this into your agent — Claude Code, Codex, or Cursor:</p>
+          <div class="handoff-cmd"><code id="handoffCmd"></code></div>
+          <button type="button" id="handoffCopy" class="btn-ghost">Copy prompt</button>
+        </div>
+        <button type="button" id="endReview" class="end-review" title="Stop this review and release the waiting agent">End review</button>
+      </div>
+    </aside>
+  </div>
+
+  <script type="module" src="/chrome.js"></script>
+</body>
+</html>

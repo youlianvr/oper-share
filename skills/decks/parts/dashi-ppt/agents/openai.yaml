@@ -1,0 +1,6 @@
+interface:
+  display_name: "Dashi PPT"
+  short_description: "Generate editable HTML presentation decks"
+  icon_small: "./assets/skill/dashi-ppt-small.png"
+  icon_large: "./assets/skill/dashi-ppt.png"
+  default_prompt: "Use $dashi-ppt to turn my presentation goal into an editable HTML deck."

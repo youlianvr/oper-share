@@ -1,0 +1,15 @@
+{
+  "skill_name": "agent-refactor-safety",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Split bot.py (2500 lines) into modules: runtime, UI, pipeline, handlers. Tests must stay green; old imports from bot.py must keep working.",
+      "expected_output": "Map first (read+grep by symbols, 5-10 actions without Edit). Extract from the least dependent (runtime/config/utils → handlers). bot.py remains a facade with re-exports. Every step: Edit → ruff/compileall → pytest. bind(namespace) with a _LOCAL_NAMES guard for handlers. Tests green after each major step."
+    },
+    {
+      "id": 2,
+      "prompt": "The CBT test branch has hardening fixes (charge logs, metrics, provider-debug). Port them to production without overwriting production specifics (access.py, configs, tokens).",
+      "expected_output": "Non-git merge protocol: 1) hash-compare same-named files, 2) diff only the differing ones, 3) selective transfer of hardening changes (grep by markers: charge log, metric_inc, debug), 4) skip production-specific files (exclude list). After the merge: compileall + ruff + pytest in the production venv. Before copying — diff --stat."
+    }
+  ]
+}

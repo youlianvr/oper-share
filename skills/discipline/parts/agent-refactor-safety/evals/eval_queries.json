@@ -1,0 +1,12 @@
+[
+  {"query": "Разбей монолит bot.py на модули, он уже 3000 строк", "should_trigger": true},
+  {"query": "Перенеси исправления из тестовой версии в продакшен", "should_trigger": true},
+  {"query": "Удали неиспользуемые импорты из проекта", "should_trigger": true},
+  {"query": "После рефакторинга пропала функция edit_html, найди почему", "should_trigger": true},
+  {"query": "Обнови код, но не сломай существующие тесты", "should_trigger": true},
+  {"query": "Вынеси общую логику в shared функцию вместо копипасты", "should_trigger": true},
+  {"query": "Почему сервер не отвечает на запросы?", "should_trigger": false},
+  {"query": "Напиши юнит-тесты для нового модуля", "should_trigger": false},
+  {"query": "Спроектируй архитектуру микросервисов с нуля", "should_trigger": false},
+  {"query": "Добавь rate limit на эндпоинт", "should_trigger": false}
+]

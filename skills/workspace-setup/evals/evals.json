@@ -1,0 +1,15 @@
+{
+  "skill_name": "workspace-setup",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Brand-new Windows machine, freshly installed, not even Python yet. Install AGGG2.0.",
+      "expected_output": "bootstrap.ps1 (winget: mise → runtimes → setup.py) or mise via winget install jdx.mise; then python scripts/setup.py (on Windows: python, not python3); PYTHONUTF8=1 in User env (cp1251 console); after install — doctor.py, opencode mcp list, a base search. Everything idempotent."
+    },
+    {
+      "id": 2,
+      "prompt": "Build an AGGG2.0 archive to hand to another person, WITHOUT secrets and with a password.",
+      "expected_output": "make_archive.sh --zip-password PASSWORD (ZipCrypto); built-in secret check before packing; exclusions: db/, venv/, .env, models/, .git/; after packing — an independent verification: unpack, grep for secrets (sk- with 30+ chars, Bearer, ghp_), no .env/.pem/.key; verify the password actually protects it (without the password — incorrect password)."
+    }
+  ]
+}

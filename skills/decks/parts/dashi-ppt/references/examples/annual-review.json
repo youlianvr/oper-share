@@ -1,0 +1,705 @@
+{
+  "schemaVersion": 2,
+  "title": "AI 融资年度回顾",
+  "goal": "面向投资团队汇报 AI 融资年度进展、关键变化和下一步判断",
+  "audience": "投资团队",
+  "owner": "研究团队",
+  "randomSeed": "theme08-example",
+  "workflowRunId": "theme08-example-run",
+  "pageCount": 5,
+  "themePack": "theme08",
+  "variantOutputMode": "comparison",
+  "slides": [
+    {
+      "id": "s1",
+      "content": {
+        "presentation": {
+          "title": "AI 融资年度回顾",
+          "summary": "面向投资团队汇报 AI 融资年度进展、关键变化和下一步判断",
+          "takeaway": "面向投资团队汇报 AI 融资年度进展、关键变化和下一步判断",
+          "items": [
+            {
+              "id": "goal",
+              "label": "核心目标",
+              "value": 100,
+              "displayValue": "100%",
+              "unit": "%",
+              "detail": "100% · 面向投资团队"
+            },
+            {
+              "id": "owner",
+              "label": "负责人",
+              "value": 80,
+              "displayValue": "80%",
+              "unit": "%",
+              "detail": "80% · 研究团队负责AI 融资年度回顾"
+            },
+            {
+              "id": "audience",
+              "label": "目标受众",
+              "value": 90,
+              "displayValue": "90%",
+              "unit": "%",
+              "detail": "90% · 面向投资团队"
+            }
+          ]
+        },
+        "media": [],
+        "meta": {
+          "brand": "研究团队",
+          "pageLabel": "1 / 5",
+          "unit": "",
+          "panelTitle": "KEY FACTS",
+          "date": ""
+        }
+      },
+      "selectedVariant": "v1",
+      "variants": [
+        {
+          "id": "v1",
+          "kind": "template",
+          "layout": "theme08_page001",
+          "props": {
+            "mediaCount": 0
+          },
+          "contentMap": {
+            "subtitle": "presentation.summary"
+          }
+        },
+        {
+          "id": "v2",
+          "kind": "template",
+          "layout": "theme08_page002",
+          "props": {},
+          "contentMap": {
+            "subtitle": "presentation.summary"
+          }
+        },
+        {
+          "id": "v3",
+          "kind": "template",
+          "layout": "theme08_page003",
+          "props": {
+            "mediaCount": 0
+          },
+          "contentMap": {}
+        },
+        {
+          "id": "v4",
+          "kind": "bespoke",
+          "adjustable": false,
+          "composition": {
+            "designIntent": {
+              "objective": "建立AI 融资年度回顾的汇报范围",
+              "audience": "投资团队",
+              "narrativeRole": "封面定调",
+              "emphasis": "AI 融资年度回顾",
+              "rationale": "使用单一标题中心和两条关键信息建立清晰层级",
+              "compositionFamily": "hero"
+            },
+            "background": "default",
+            "elements": [
+              {
+                "id": "title",
+                "type": "text",
+                "grid": {
+                  "column": 1,
+                  "row": 1,
+                  "width": 10,
+                  "height": 2
+                },
+                "role": "title",
+                "text": ""
+              },
+              {
+                "id": "points",
+                "type": "list",
+                "grid": {
+                  "column": 1,
+                  "row": 4,
+                  "width": 8,
+                  "height": 3
+                },
+                "items": []
+              }
+            ]
+          },
+          "contentMap": {
+            "elements[0].text": "presentation.title",
+            "elements[1].items": {
+              "source": "presentation.items",
+              "fields": {
+                "title": "label",
+                "body": "detail"
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "content": {
+        "presentation": {
+          "title": "AI 融资年度回顾 · 2",
+          "summary": "面向投资团队汇报 AI 融资年度进展、关键变化和下一步判断 · 第 2 页",
+          "takeaway": "面向投资团队汇报 AI 融资年度进展、关键变化和下一步判断",
+          "items": [
+            {
+              "id": "goal",
+              "label": "核心目标",
+              "value": 100,
+              "displayValue": "100%",
+              "unit": "%",
+              "detail": "100% · 推进到第 2 页"
+            },
+            {
+              "id": "owner",
+              "label": "负责人",
+              "value": 80,
+              "displayValue": "80%",
+              "unit": "%",
+              "detail": "80% · 研究团队负责AI 融资年度回顾"
+            },
+            {
+              "id": "audience",
+              "label": "目标受众",
+              "value": 90,
+              "displayValue": "90%",
+              "unit": "%",
+              "detail": "90% · 面向投资团队"
+            }
+          ]
+        },
+        "media": [],
+        "meta": {
+          "brand": "研究团队",
+          "pageLabel": "2 / 5",
+          "unit": "",
+          "panelTitle": "KEY FACTS",
+          "date": ""
+        }
+      },
+      "selectedVariant": "v1",
+      "variants": [
+        {
+          "id": "v1",
+          "kind": "template",
+          "layout": "theme08_page006",
+          "props": {},
+          "contentMap": {
+            "headline": "presentation.title",
+            "summary": "presentation.summary",
+            "metrics": {
+              "source": "presentation.items",
+              "fields": {
+                "value": "displayValue",
+                "unit": "unit",
+                "label": "label"
+              }
+            },
+            "trackData": {
+              "source": "presentation.items",
+              "fields": {
+                "label": "label",
+                "pct": "value"
+              }
+            }
+          }
+        },
+        {
+          "id": "v2",
+          "kind": "template",
+          "layout": "theme08_page007",
+          "props": {},
+          "contentMap": {
+            "headline": "presentation.title"
+          }
+        },
+        {
+          "id": "v3",
+          "kind": "template",
+          "layout": "theme08_page008",
+          "props": {},
+          "contentMap": {
+            "headline": "presentation.title",
+            "summary": "presentation.summary",
+            "points": {
+              "source": "presentation.items",
+              "fields": {
+                "label": "label",
+                "sub": "detail",
+                "amount": "value",
+                "count": "value"
+              }
+            }
+          }
+        },
+        {
+          "id": "v4",
+          "kind": "bespoke",
+          "adjustable": false,
+          "composition": {
+            "designIntent": {
+              "objective": "解释AI 融资年度回顾第 2 页的核心信息",
+              "audience": "投资团队",
+              "narrativeRole": "论证推进",
+              "emphasis": "面向投资团队汇报 AI 融资年度进展、关键变化和下一步判断",
+              "rationale": "使用单一标题中心和两条关键信息建立清晰层级",
+              "compositionFamily": "editorial"
+            },
+            "background": "default",
+            "elements": [
+              {
+                "id": "title",
+                "type": "text",
+                "grid": {
+                  "column": 1,
+                  "row": 1,
+                  "width": 10,
+                  "height": 2
+                },
+                "role": "title",
+                "text": ""
+              },
+              {
+                "id": "points",
+                "type": "list",
+                "grid": {
+                  "column": 1,
+                  "row": 4,
+                  "width": 8,
+                  "height": 3
+                },
+                "items": []
+              }
+            ]
+          },
+          "contentMap": {
+            "elements[0].text": "presentation.title",
+            "elements[1].items": {
+              "source": "presentation.items",
+              "fields": {
+                "title": "label",
+                "body": "detail"
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "content": {
+        "presentation": {
+          "title": "AI 融资年度回顾 · 3",
+          "summary": "面向投资团队汇报 AI 融资年度进展、关键变化和下一步判断 · 第 3 页",
+          "takeaway": "面向投资团队汇报 AI 融资年度进展、关键变化和下一步判断",
+          "items": [
+            {
+              "id": "goal",
+              "label": "核心目标",
+              "value": 100,
+              "displayValue": "100%",
+              "unit": "%",
+              "detail": "100% · 推进到第 3 页"
+            },
+            {
+              "id": "owner",
+              "label": "负责人",
+              "value": 80,
+              "displayValue": "80%",
+              "unit": "%",
+              "detail": "80% · 研究团队负责AI 融资年度回顾"
+            },
+            {
+              "id": "audience",
+              "label": "目标受众",
+              "value": 90,
+              "displayValue": "90%",
+              "unit": "%",
+              "detail": "90% · 面向投资团队"
+            }
+          ]
+        },
+        "media": [],
+        "meta": {
+          "brand": "研究团队",
+          "pageLabel": "3 / 5",
+          "unit": "",
+          "panelTitle": "KEY FACTS",
+          "date": ""
+        }
+      },
+      "selectedVariant": "v1",
+      "variants": [
+        {
+          "id": "v1",
+          "kind": "template",
+          "layout": "theme08_page018",
+          "props": {},
+          "contentMap": {
+            "headline": "presentation.title",
+            "summary": "presentation.summary"
+          }
+        },
+        {
+          "id": "v2",
+          "kind": "template",
+          "layout": "theme08_page019",
+          "props": {},
+          "contentMap": {
+            "headline": "presentation.title",
+            "summary": "presentation.summary",
+            "hero.unit": "meta.unit",
+            "series": {
+              "source": "presentation.items",
+              "fields": {
+                "label": "label",
+                "v": "value"
+              }
+            }
+          }
+        },
+        {
+          "id": "v3",
+          "kind": "template",
+          "layout": "theme08_page020",
+          "props": {},
+          "contentMap": {
+            "headline": "presentation.title",
+            "summary": "presentation.summary"
+          }
+        },
+        {
+          "id": "v4",
+          "kind": "bespoke",
+          "adjustable": false,
+          "composition": {
+            "designIntent": {
+              "objective": "解释AI 融资年度回顾第 3 页的核心信息",
+              "audience": "投资团队",
+              "narrativeRole": "论证推进",
+              "emphasis": "面向投资团队汇报 AI 融资年度进展、关键变化和下一步判断",
+              "rationale": "使用单一标题中心和两条关键信息建立清晰层级",
+              "compositionFamily": "split"
+            },
+            "background": "default",
+            "elements": [
+              {
+                "id": "title",
+                "type": "text",
+                "grid": {
+                  "column": 1,
+                  "row": 1,
+                  "width": 10,
+                  "height": 2
+                },
+                "role": "title",
+                "text": ""
+              },
+              {
+                "id": "points",
+                "type": "list",
+                "grid": {
+                  "column": 1,
+                  "row": 4,
+                  "width": 8,
+                  "height": 3
+                },
+                "items": []
+              }
+            ]
+          },
+          "contentMap": {
+            "elements[0].text": "presentation.title",
+            "elements[1].items": {
+              "source": "presentation.items",
+              "fields": {
+                "title": "label",
+                "body": "detail"
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "content": {
+        "presentation": {
+          "title": "AI 融资年度回顾 · 4",
+          "summary": "面向投资团队汇报 AI 融资年度进展、关键变化和下一步判断 · 第 4 页",
+          "takeaway": "面向投资团队汇报 AI 融资年度进展、关键变化和下一步判断",
+          "items": [
+            {
+              "id": "goal",
+              "label": "核心目标",
+              "value": 100,
+              "displayValue": "100%",
+              "unit": "%",
+              "detail": "100% · 推进到第 4 页"
+            },
+            {
+              "id": "owner",
+              "label": "负责人",
+              "value": 80,
+              "displayValue": "80%",
+              "unit": "%",
+              "detail": "80% · 研究团队负责AI 融资年度回顾"
+            },
+            {
+              "id": "audience",
+              "label": "目标受众",
+              "value": 90,
+              "displayValue": "90%",
+              "unit": "%",
+              "detail": "90% · 面向投资团队"
+            }
+          ]
+        },
+        "media": [],
+        "meta": {
+          "brand": "研究团队",
+          "pageLabel": "4 / 5",
+          "unit": "",
+          "panelTitle": "KEY FACTS",
+          "date": ""
+        }
+      },
+      "selectedVariant": "v1",
+      "variants": [
+        {
+          "id": "v1",
+          "kind": "template",
+          "layout": "theme08_page030",
+          "props": {
+            "mediaCount": 0
+          },
+          "contentMap": {
+            "headline": "presentation.title",
+            "summary": "presentation.summary",
+            "hero.unit": "meta.unit"
+          }
+        },
+        {
+          "id": "v2",
+          "kind": "template",
+          "layout": "theme08_page031",
+          "props": {
+            "mediaCount": 0
+          },
+          "contentMap": {
+            "headline": "presentation.title",
+            "summary": "presentation.summary",
+            "hero.unit": "meta.unit"
+          }
+        },
+        {
+          "id": "v3",
+          "kind": "template",
+          "layout": "theme08_page032",
+          "props": {},
+          "contentMap": {
+            "headline": "presentation.title",
+            "summary": "presentation.summary"
+          }
+        },
+        {
+          "id": "v4",
+          "kind": "bespoke",
+          "adjustable": false,
+          "composition": {
+            "designIntent": {
+              "objective": "解释AI 融资年度回顾第 4 页的核心信息",
+              "audience": "投资团队",
+              "narrativeRole": "论证推进",
+              "emphasis": "面向投资团队汇报 AI 融资年度进展、关键变化和下一步判断",
+              "rationale": "使用单一标题中心和两条关键信息建立清晰层级",
+              "compositionFamily": "editorial"
+            },
+            "background": "default",
+            "elements": [
+              {
+                "id": "title",
+                "type": "text",
+                "grid": {
+                  "column": 1,
+                  "row": 1,
+                  "width": 10,
+                  "height": 2
+                },
+                "role": "title",
+                "text": ""
+              },
+              {
+                "id": "points",
+                "type": "list",
+                "grid": {
+                  "column": 1,
+                  "row": 4,
+                  "width": 8,
+                  "height": 3
+                },
+                "items": []
+              }
+            ]
+          },
+          "contentMap": {
+            "elements[0].text": "presentation.title",
+            "elements[1].items": {
+              "source": "presentation.items",
+              "fields": {
+                "title": "label",
+                "body": "detail"
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "s5",
+      "content": {
+        "presentation": {
+          "title": "AI 融资年度回顾 · 5",
+          "summary": "面向投资团队汇报 AI 融资年度进展、关键变化和下一步判断 · 第 5 页",
+          "takeaway": "面向投资团队汇报 AI 融资年度进展、关键变化和下一步判断",
+          "items": [
+            {
+              "id": "goal",
+              "label": "核心目标",
+              "value": 100,
+              "displayValue": "100%",
+              "unit": "%",
+              "detail": "100% · 推进到第 5 页"
+            },
+            {
+              "id": "owner",
+              "label": "负责人",
+              "value": 80,
+              "displayValue": "80%",
+              "unit": "%",
+              "detail": "80% · 研究团队负责AI 融资年度回顾"
+            },
+            {
+              "id": "audience",
+              "label": "目标受众",
+              "value": 90,
+              "displayValue": "90%",
+              "unit": "%",
+              "detail": "90% · 面向投资团队"
+            }
+          ]
+        },
+        "media": [],
+        "meta": {
+          "brand": "研究团队",
+          "pageLabel": "5 / 5",
+          "unit": "",
+          "panelTitle": "KEY FACTS",
+          "date": ""
+        }
+      },
+      "selectedVariant": "v1",
+      "variants": [
+        {
+          "id": "v1",
+          "kind": "template",
+          "layout": "theme08_page074",
+          "props": {},
+          "contentMap": {}
+        },
+        {
+          "id": "v2",
+          "kind": "template",
+          "layout": "theme08_page075",
+          "props": {
+            "mediaCount": 0
+          },
+          "contentMap": {
+            "headline": "presentation.title",
+            "summary": "presentation.summary",
+            "tiles": {
+              "source": "presentation.items",
+              "fields": {
+                "name": "label"
+              }
+            }
+          }
+        },
+        {
+          "id": "v3",
+          "kind": "template",
+          "layout": "theme08_page076",
+          "props": {},
+          "contentMap": {
+            "headline": "presentation.title",
+            "summary": "presentation.summary",
+            "items": {
+              "source": "presentation.items",
+              "fields": {
+                "name": "label",
+                "rankA": "value",
+                "rankB": "value",
+                "valA": "value",
+                "valB": "value"
+              }
+            }
+          }
+        },
+        {
+          "id": "v4",
+          "kind": "bespoke",
+          "adjustable": false,
+          "composition": {
+            "designIntent": {
+              "objective": "解释AI 融资年度回顾第 5 页的核心信息",
+              "audience": "投资团队",
+              "narrativeRole": "论证推进",
+              "emphasis": "面向投资团队汇报 AI 融资年度进展、关键变化和下一步判断",
+              "rationale": "使用单一标题中心和两条关键信息建立清晰层级",
+              "compositionFamily": "split"
+            },
+            "background": "default",
+            "elements": [
+              {
+                "id": "title",
+                "type": "text",
+                "grid": {
+                  "column": 1,
+                  "row": 1,
+                  "width": 10,
+                  "height": 2
+                },
+                "role": "title",
+                "text": ""
+              },
+              {
+                "id": "points",
+                "type": "list",
+                "grid": {
+                  "column": 1,
+                  "row": 4,
+                  "width": 8,
+                  "height": 3
+                },
+                "items": []
+              }
+            ]
+          },
+          "contentMap": {
+            "elements[0].text": "presentation.title",
+            "elements[1].items": {
+              "source": "presentation.items",
+              "fields": {
+                "title": "label",
+                "body": "detail"
+              }
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "skill_name": "money-path-safety",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "We have charge_seconds: the user double-clicked the \"check payment\" button and the balance doubled. Find the cause and fix it.",
+      "expected_output": "Diagnosis: repeated invoice processing without idempotency (no operation key / credited flag). Fix: invoice_id key + credited flag + early return; a double-submit test (second run is a no-op); log every mutation. No except: pass anywhere on the charging path."
+    },
+    {
+      "id": 2,
+      "prompt": "Add promo code activation: the same user must not activate one promo code twice, and the reason for rejection must be reported (already used / exhausted / not found).",
+      "expected_output": "Schema: a redemption table with PRIMARY KEY (code, user_id) — repeats are blocked at the DB level, no SELECT-before-INSERT. The function returns (ok, reason_code, value) with codes already_used/exhausted/not_found; the UI maps codes to human messages. Input normalized once at the boundary. Cap checked before INSERT (a reject creates no records)."
+    }
+  ]
+}

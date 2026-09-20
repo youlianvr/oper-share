@@ -1,0 +1,15 @@
+{
+  "skill_name": "web-research-camoufox",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "We're choosing a speech-recognition library for our bot. How do we decide the way the industry does?",
+      "expected_output": "Deep research: 5-10 web_search queries from different angles IN PARALLEL (a map), cluster selection (official docs, GitHub, production projects), depth on the 1-2 best; SIFT assessment; \"X vs Y\" and \"why we switched\" comparisons; result = pattern + why it won + what was rejected; conclusions into research.db."
+    },
+    {
+      "id": 2,
+      "prompt": "I need to check a fact: does library X support format Y. How, quickly?",
+      "expected_output": "Standard research: web_search (2-3 queries from different angles) → fetch_page the primary source (official docs/source, raise max_chars for large docs) → a second source to confirm → findings.py add. Depth proportional to the task — a reference, not a decision."
+    }
+  ]
+}

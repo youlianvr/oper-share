@@ -1,0 +1,42 @@
+[
+  {
+    "query": "Где определена функция load_telegram?",
+    "should_trigger": true
+  },
+  {
+    "query": "Кто вызывает tg_send и откуда?",
+    "should_trigger": true
+  },
+  {
+    "query": "Мы это уже разбирали по лимитам? К чему пришли?",
+    "should_trigger": true
+  },
+  {
+    "query": "Что в коде проекта про обработку промокодов?",
+    "should_trigger": true
+  },
+  {
+    "query": "Перед правкой: пойми как работает модуль доступа",
+    "should_trigger": true
+  },
+  {
+    "query": "Кто наследует от TestCase в проекте?",
+    "should_trigger": true
+  },
+  {
+    "query": "Что такое агентные скиллы по стандарту agentskills?",
+    "should_trigger": false
+  },
+  {
+    "query": "Как поставить LSP-серверы на Windows?",
+    "should_trigger": false
+  },
+  {
+    "query": "Открой сайт и посмотри актуальные цены",
+    "should_trigger": false
+  },
+  {
+    "query": "Почему завис полный прогон тестов?",
+    "should_trigger": false
+  }
+]

@@ -1,0 +1,15 @@
+{
+  "skill_name": "production-first-decisions",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "We need a DB migration tool for a Python project. What to pick and how to decide?",
+      "expected_output": "Production-first: formulate \"how it's done in production\" → 5-10 web_search queries from different angles (Alembic, yoyo-migrations, comparisons, \"why we switched\") → check the hypothesis against findings → a spike measurement in a sandbox (real case + doing nothing) → conclusions into research.db (what was chosen, what was rejected) → integrate only if provably better. The result = the pattern + why + what was rejected."
+    },
+    {
+      "id": 2,
+      "prompt": "We need an install command for opencode on Windows. Where do we get it?",
+      "expected_output": "From the primary source: official docs opencode.ai/download (npm i -g opencode-ai), not from memory. Verified on a case: opencode.ai/install.ps1 = 404. Install commands are always cross-checked against official docs."
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+[
+  {
+    "query": "Как правильно выбрать ORM для нашего проекта?",
+    "should_trigger": true
+  },
+  {
+    "query": "Реши по индустрии: что использовать для очередей",
+    "should_trigger": true
+  },
+  {
+    "query": "Стоит ли внедрять этот инструмент? Проверь сначала",
+    "should_trigger": true
+  },
+  {
+    "query": "Как делают в проде авторизацию в ботах?",
+    "should_trigger": true
+  },
+  {
+    "query": "Сравни подходы и выбери лучший по практике",
+    "should_trigger": true
+  },
+  {
+    "query": "Перед интеграцией библиотеки — замерь её",
+    "should_trigger": true
+  },
+  {
+    "query": "Покажи, как установить npm-пакет (справка)",
+    "should_trigger": false
+  },
+  {
+    "query": "Где определён символ в коде?",
+    "should_trigger": false
+  },
+  {
+    "query": "Почини зависший сервис",
+    "should_trigger": false
+  },
+  {
+    "query": "Составь план задачи",
+    "should_trigger": false
+  }
+]

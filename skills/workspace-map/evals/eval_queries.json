@@ -1,0 +1,42 @@
+[
+  {
+    "query": "Где лежит ядро правил прошивки?",
+    "should_trigger": true
+  },
+  {
+    "query": "Как устроен воркспейс AGGG2.0, что где лежит?",
+    "should_trigger": true
+  },
+  {
+    "query": "Куда кладётся новый скилл канона?",
+    "should_trigger": true
+  },
+  {
+    "query": "Как разнести AGENTS.md по харнесам?",
+    "should_trigger": true
+  },
+  {
+    "query": "Что за файл harness/core.txt и зачем он?",
+    "should_trigger": true
+  },
+  {
+    "query": "Какие доки обязательны к прочтению перед работой?",
+    "should_trigger": true
+  },
+  {
+    "query": "Поставь воркспейс на новую машину",
+    "should_trigger": false
+  },
+  {
+    "query": "Найди символ в базе проекта",
+    "should_trigger": false
+  },
+  {
+    "query": "Почему сервер упал?",
+    "should_trigger": false
+  },
+  {
+    "query": "Объясни, как работает rate limit",
+    "should_trigger": false
+  }
+]

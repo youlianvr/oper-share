@@ -1,0 +1,42 @@
+[
+  {
+    "query": "Начни задачу — с чего начать, чтобы ничего не пропустить?",
+    "should_trigger": true
+  },
+  {
+    "query": "Сделай фичу, но сначала составь план с критерием готовности",
+    "should_trigger": true
+  },
+  {
+    "query": "Мы это уже разбирали? Проверь перед началом",
+    "should_trigger": true
+  },
+  {
+    "query": "Ошибка повторилась дважды, как быть?",
+    "should_trigger": true
+  },
+  {
+    "query": "Задача нетривиальная, проведи её правильно от начала до конца",
+    "should_trigger": true
+  },
+  {
+    "query": "Сделай и проверь: линтер, тесты, живьём",
+    "should_trigger": true
+  },
+  {
+    "query": "Почему сервер упал ночью?",
+    "should_trigger": false
+  },
+  {
+    "query": "Почини двойное списание при оплате",
+    "should_trigger": false
+  },
+  {
+    "query": "Поставь AGGG2.0 на новую машину",
+    "should_trigger": false
+  },
+  {
+    "query": "Где определена функция load_telegram?",
+    "should_trigger": false
+  }
+]

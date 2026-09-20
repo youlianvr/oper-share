@@ -1,0 +1,12 @@
+[
+  {"query": "Всё ещё сломано после обновления! Мы же починили", "should_trigger": true},
+  {"query": "Сервис завис, ничего не отвечает уже час", "should_trigger": true},
+  {"query": "Раньше работало, а после деплоя перестало", "should_trigger": true},
+  {"query": "Метрика нулевая, но UI показывает успех — что за фигня", "should_trigger": true},
+  {"query": "Процесс не перезапустился после фикса, лог старый", "should_trigger": true},
+  {"query": "Тесты зависают на полном прогоне", "should_trigger": true},
+  {"query": "Отрефактори модуль payment.py", "should_trigger": false},
+  {"query": "Напиши тесты для rate limit", "should_trigger": false},
+  {"query": "Как добавить промокод в систему?", "should_trigger": false},
+  {"query": "Почини кнопку «назад» в интерфейсе", "should_trigger": false}
+]
