@@ -37,5 +37,10 @@
     "pngjs": "^7.0.0",
     "playwright-core": "^1.60.0",
     "pdf-lib": "^1.17.1"
+  },
+  "overrides": {
+    "pptxgenjs": {
+      "image-size": "2.0.3"
+    }
   }
 }
