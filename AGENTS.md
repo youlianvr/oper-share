@@ -65,6 +65,9 @@ its cause, verify through the actual usage path, then report.
 - Commit only task-owned changes, one project per commit, after a logical step;
   report the hash and the file list. Messages are English, imperative, one reason
   in the first line. Never push, deploy or open a PR without approval.
+- **No tool attribution.** A commit message carries no agent signature: no
+  "Generated with ..." trailer, no "Co-Authored-By:" line, no tool name in the
+  subject or the body. The change and its reason are the whole message.
 
 ## Layout
 

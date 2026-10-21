@@ -115,7 +115,9 @@
   request.
 - Commits: local checkpoints after each logical step, staging only task-owned
   changes, with hash and file list reported. Push, deploy, PR, payment and sending
-  need explicit approval, one authorization per action.
+  need explicit approval, one authorization per action. The message carries no tool
+  attribution: no "Generated with ..." trailer, no "Co-Authored-By:" line, no tool
+  name in the subject or the body.
 - A project's `STATUS.md` records open jambs, missing keys and questions. It never
   becomes a disclaimer inside the product and never substitutes for a fix.
 - Publishing is per project and follows that project's own procedure. This folder

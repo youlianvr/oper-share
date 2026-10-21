@@ -26,7 +26,7 @@ not as verified. Everything else is markdown.
 
 | Path | What it is |
 |---|---|
-| `AGENTS.md` | The law, 80 lines: truth contract, sanity gate, permissions, memory and Git rules |
+| `AGENTS.md` | The law, 83 lines: truth contract, sanity gate, permissions, memory and Git rules |
 | `BOOT.md` | The runbook: how a task starts, how memory is read and written, how work is verified |
 | `HOSTS.md` | The tool surface of your client — a Freebuff Desktop profile ships as the reference |
 | `TOOLS.md` | This machine: OS, interpreters, services, and the names — never the values — of the keys in `.env`; birth writes it |

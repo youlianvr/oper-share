@@ -388,7 +388,7 @@ not in the skills:
 
 Counts in `README.md` and `MANIFEST.md` were claims about the tree and had drifted:
 247 parts and an "empty baseline" no longer matched. Measured now — 31 routers,
-245 parts, 2 288 files under `skills/`, `AGENTS.md` at 80 lines, `eval_skills.py`
+245 parts, 2 288 files under `skills/`, `AGENTS.md` at 83 lines, `eval_skills.py`
 at Hit@1 27/31 and Hit@3 31/31 (the S3 figure of 28/31 was before three descriptions
 were rewritten for redaction).
 
@@ -448,7 +448,7 @@ Pull-request body for the first commit of the public repository:
 ```markdown
 ## What this is
 
-A working kit for an AI coding agent: `AGENTS.md` (the law, 80 lines), `BOOT.md`
+A working kit for an AI coding agent: `AGENTS.md` (the law, 83 lines), `BOOT.md`
 (the runbook), `HOSTS.md` (the tool surface per client), 31 router skills under
 `skills/`, a stdlib-only memory tree in `_scripts/memory.py`, and `BIRTH.md`, the
 first-run bootstrap that writes its own host profile and then deletes itself.

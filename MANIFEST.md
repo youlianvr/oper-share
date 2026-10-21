@@ -8,7 +8,7 @@ that is actually in use, with the private material removed.
 
 | Path | Contents |
 |---|---|
-| `AGENTS.md` | The law, loaded every turn: truth contract, sanity gate, permissions, memory rules, Git rules (80 lines) |
+| `AGENTS.md` | The law, loaded every turn: truth contract, sanity gate, permissions, memory rules, Git rules (83 lines) |
 | `BOOT.md` | The runbook: task start, memory verbs, skill routing, engineering procedure, safety, layout, diagnostics |
 | `HOSTS.md` | The tool surface per client: one verb table, a Freebuff Desktop profile, a generic profile, and how to wire a new host |
 | `BIRTH.md` | First-run bootstrap: probe, profile, create the tree, interview, verify, delete itself |
@@ -49,7 +49,7 @@ say which engines are not bundled and that an install must be recorded in
    in a router resolves to a real folder; cross-router references carry the full
    `skills/<router>/parts/<x>/` path.
 3. **Scripts run on a bare tree.** `memory.py` was exercised through every verb on
-   a scratch store; `eval_skills.py` reports 31 routers, `AGENTS.md` at 80 lines and
+   a scratch store; `eval_skills.py` reports 31 routers, `AGENTS.md` at 83 lines and
    a trigger benchmark of Hit@1 27/31, Hit@3 31/31; `sync_skills.py` exits 0 with
    no host folder and plans correctly with one; `parity_claim.py` creates and lists a
    claim. `secret_gate.py` exits 0 on the shipped tree and exits 1 on a secret added
