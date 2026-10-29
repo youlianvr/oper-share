@@ -1,0 +1,16 @@
+{
+  "avoid": ["Name Of The Original App", "Its Company"],
+  "app_store": {
+    "name": "Slotwise: Booking Links",
+    "subtitle": "Share a link, get booked",
+    "promotional_text": "New: text reminders, so fewer clients forget. Free for one calendar.",
+    "description": "Slotwise turns your calendar into a booking link.\n\nShare the link. Clients see only the times you are free, pick one, and it lands in your calendar with a video link attached.\n\nWhat you get:\n- One link for every kind of meeting\n- Buffers so meetings never run back to back\n- Text and email reminders\n- Payments at booking\n\nFree for one calendar. Pro is $8 a month.",
+    "keywords": "scheduler,appointment,calendar,meetings,reminders,availability,clients,planner",
+    "whats_new": "Text reminders. Turn them on in Settings."
+  },
+  "google_play": {
+    "title": "Slotwise: Booking Links",
+    "short_description": "Share one link and let clients book a time you are actually free.",
+    "full_description": "Slotwise turns your calendar into a booking link.\n\nShare the link. Clients see only the times you are free, pick one, and it lands in your calendar with a video link attached.\n\nFree for one calendar. Pro is $8 a month."
+  }
+}

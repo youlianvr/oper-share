@@ -2,7 +2,7 @@
 
 A working kit for an AI coding agent, taken from daily use rather than designed on
 a whiteboard. It gives the agent four things: a short law it loads every turn, a
-runbook it reads at task start, a library of 31 router skills that load on demand,
+runbook it reads at task start, a library of 33 router skills that load on demand,
 and a memory tree that never overwrites its own decisions.
 
 The point of the kit is the boring part everyone skips: **the agent tells you what
@@ -26,15 +26,16 @@ not as verified. Everything else is markdown.
 
 | Path | What it is |
 |---|---|
-| `AGENTS.md` | The law, 83 lines: truth contract, sanity gate, permissions, memory and Git rules |
+| `AGENTS.md` | The law, 85 lines: truth contract, sanity gate, permissions, memory and Git rules |
 | `BOOT.md` | The runbook: how a task starts, how memory is read and written, how work is verified |
 | `HOSTS.md` | The tool surface of your client — a Freebuff Desktop profile ships as the reference |
 | `TOOLS.md` | This machine: OS, interpreters, services, and the names — never the values — of the keys in `.env`; birth writes it |
+| `WIKI.md` | The kit's map: which document answers which question, the four layers, how skills and memory are shaped |
 | `BIRTH.md` | The first-run bootstrap; it deletes itself |
-| `SKILLS.md` | The 31 routers and the four-block shape every one of them follows |
+| `SKILLS.md` | The 33 routers and the four-block shape every one of them follows |
 | `PROVENANCE.md` | Where vendored material came from, under which license, and what was withheld |
 | `MANIFEST.md` | What ships, what does not, and how the package was verified |
-| `skills/` | 31 routers with 245 parts: browser, research, design, decks, documents, security, OSINT, reverse engineering, memory, planning, review, ship and more |
+| `skills/` | 33 routers with 257 parts: browser, research, design, decks, documents, security, OSINT, reverse engineering, memory, planning, review, ship and more |
 | `_scripts/` | The memory tree CLI, the skill-context and trigger evaluator, the one-way skill sync, trash-only removal, the secret gate |
 | `_memory/` | `INDEX.md` ships; birth adds `USER.md` and the memory store, and both stay in your repository |
 

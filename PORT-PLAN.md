@@ -529,3 +529,48 @@ not the same thing. The three MCP servers called during the run were all dead
 (`obsidian`: connection cancelled; `searchmcp`: timeout; `zvec-grep`: server failed
 to start), so Step 5's "one real call" produced no success — a fact about this
 machine, recorded in `TOOLS.md`, not a property of the package.
+
+## Update 2026-10-29 — parity with the live workspace
+
+The kit was built on 2026-10-20 and has been eight days behind since. This pass
+brought it level where the difference is portable, and left the rest private on
+purpose.
+
+**Moved in.** `skills/loop-breaker/` (one part) and `skills/replica/` (eleven parts,
+Jake Schincariol, MIT, `LICENSE.txt` kept). Three host-specific statements were
+rewritten on the way: the session-log command became "the host's session-log tool
+(`HOSTS.md`)", the tool paths lost the workspace's `.agents/` prefix, and replica's
+"in this workspace" became "in this kit". `PROVENANCE.md` gained its license row.
+
+**Held back.** `omniroute` and `router-admin` still stay private — both describe one
+machine and one account, which `MANIFEST.md` already records.
+
+**Law.** The owner's "Done" decision of 2026-10-26 is now a section in `AGENTS.md`:
+a person uses the thing start to finish with no agent, no hints and no outside
+help. Adding it pushed the law past its own cap, so two bullets were compressed
+without losing a rule; the file is 85 lines.
+
+**Trigger regression, found and fixed.** With replica's description as first
+written, the benchmark's documentation query fell out of Top-3 (Hit@3 30/31) because
+the clone router absorbed "write" and "page". Renaming that clause to "run the
+launch assets" restored Hit@1 27/31 and Hit@3 31/31 — measured, not assumed.
+
+**Decision carried over.** One rule that lived only in the owner's memory tree had
+no line in the kit: versions are pinned by hand, with no `@latest`, no self-updating
+CLI, no `postinstall` download. It is now a bullet in `BOOT.md` § 6.
+
+**Map.** `WIKI.md` is new: the kit had six documents and no page saying which one
+answers what. It is referenced from `README.md`, `BOOT.md` § 1 and `MANIFEST.md`.
+
+**Host profile.** `HOSTS.md` gained the published-repository route into the client's
+account skill set (Settings → Skills → Discover skills, search the GitHub owner,
+add, save), with the screenshot taken during the check. The section states the
+platform behaviour only: the repository stays the canon and the account copy is a
+regenerated derivative.
+
+**Numbers now.** 33 routers, 257 parts, 2 319 files; law 85 lines; startup cost
+~4.3k tokens against ~3.2k of router descriptions. Re-verified with
+`_scripts/eval_skills.py` after the last edit.
+
+**Still unproven.** Nothing here was run on Linux or macOS; the Discover-skills flow
+was read and screenshotted on this account, not exercised against a second one.

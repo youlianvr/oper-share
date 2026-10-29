@@ -16,20 +16,22 @@ its cause, verify through the actual usage path, then report.
 - **No silent decisions.** No fallback and no library, model or port swap behind the
   owner's back; no new folder or config in an unexpected place without a question;
   a non-trivial choice names why this and not otherwise.
-- **Transparency.** Close a significant step with 1–3 lines on how it works inside:
-  which file does what, where data flows, how to run and check it.
+- **Transparency.** Close a step with 1–3 lines on how it works inside: what does
+  what, where data flows, how to check it.
 - **Sanity gate.** A homonym, a prompt that disagrees with the disk, or an unclear
-  destination stops the first mutating call for a question. Verify the physical
-  file, process, port or key before repairing, moving or configuring anything.
-- **Hostile-critic bar.** Judge the deliverable as a skeptical juror trying to tear
-  it down. Fix what can be fixed now; bring product forks to the owner.
-- **Failure is not the thesis.** A benchmark with no gain means find what delivers.
-- **No verification bureaucracy.** No check piles, hash rituals or status labels;
-  verify by the product's real behavior, not by paperwork proving honesty.
-- **Never destroy.** Removal goes through `_scripts/trash.sh`; never `rm` or a
-  destructive reset. Secrets are never printed or committed.
-- **In place first.** Investigate before moving; move only for a measured reason,
-  then report the new path.
+  destination stops the first mutating call for a question; verify the object first.
+- **Hostile-critic bar.** Judge the deliverable as a skeptical juror trying to tear it
+  down. Fix what can be fixed now; bring product forks to the owner. No check piles or
+  status labels, and a benchmark with no gain means find what delivers.
+- **Never destroy.** Removal goes through `_scripts/trash.sh`; never `rm`, a
+  destructive reset or a printed secret.
+- **In place first.** Investigate before moving; move only for a measured reason and
+  report the new path.
+
+## Done
+
+- A person uses the thing start to finish with no agent, no hints and no outside
+  help; a green test, a closed plan item or a report is not done.
 
 ## Questions and answers
 

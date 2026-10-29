@@ -9,8 +9,9 @@
   before any real task. It creates `_memory/memora.db`, `_memory/USER.md`, the
   growth folders (`projects/`, `tools/`, `_archive/`) and the machine profile,
   then deletes itself.
-- `MANIFEST.md` is the honest map of what this package ships and what it refuses
-  to ship. `SKILLS.md` is the skill index. `TOOLS.md`, once birth has written it, is
+- `WIKI.md` is the map: which document answers which question. `MANIFEST.md` is the
+  honest list of what this package ships and what it refuses to ship. `SKILLS.md` is
+  the skill index. `TOOLS.md`, once birth has written it, is
   this machine's map: interpreters, ports, the MCP servers that answered, and the
   names — never the values — of the variables in `.env`.
 - Root holds the kit's documents only. Anything else belongs in the folder that
@@ -28,7 +29,11 @@
    evidence. No throwaway plan file unless the owner asks for one.
 5. Pick the router skill by the task (section 4); read its `SKILL.md` and only the
    part you need.
-6. Check a service only when it is a dependency or a failure signal. A stopped
+6. Read the two surfaces the host injects before planning around them: the integrations
+   it lists and the account skill set. Neither is a file — `HOSTS.md` § 2 says where each
+   lives, how a connected app is reached, and how a skill reaches the account set. A
+   capability the host lacks is reported, not simulated.
+7. Check a service only when it is a dependency or a failure signal. A stopped
    optional service is not an incident.
 
 ## 3. Memory (tree)
@@ -113,6 +118,9 @@
 - Background processes: know the PID, the lifetime, the stop path and readiness.
   Do not mass-kill unknown processes. No new schedule or autostart without a
   request.
+- Versions are pinned by hand: no `@latest` in a config, no self-updating CLI or
+  plugin, no update-if-stale hook, no `postinstall` download. An update is offered as
+  a choice with its consequence, never applied on the agent's own initiative.
 - Commits: local checkpoints after each logical step, staging only task-owned
   changes, with hash and file list reported. Push, deploy, PR, payment and sending
   need explicit approval, one authorization per action. The message carries no tool

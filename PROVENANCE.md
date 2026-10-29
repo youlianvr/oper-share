@@ -31,6 +31,7 @@ kit is not enough. This file records what ships under someone else's terms.
 | `skills/security/parts/security-best-practices/`, `security-threat-model/`, `security-ownership-map/` | Anthropic skills | Apache-2.0 | verbatim, `LICENSE.txt` kept |
 | `skills/security/parts/code-audit/` | OWASP Cheat Sheet Series | **CC BY-SA 4.0** | derived; `LICENSE` kept, see the exception below |
 | `skills/media/parts/novel-outline/`, `novel-characters/`, `novel-art/`, `novel-script/` | shuohao-skills | Apache-2.0 | verbatim; `skills/media/parts/LICENSE-shuohao` covers the set |
+| `skills/replica/` | Jake Schincariol (replica-skill) | MIT | adapted (paths, kit wording), `LICENSE.txt` kept |
 | `skills/reverse-engineering/parts/reverse-api-engineer/` | nottelabs (kalil0321) | MIT | verbatim, `LICENSE` kept under `references/` |
 | `skills/decks/parts/dashi-ppt/` | chuspeeism, dashiAI-ppt-skill | proprietary inside `project/packages/html-deck-to-pptx/`; the rest of the skill carries no license record | ships whole, the engine's `LICENSE` kept; see the condition below |
 

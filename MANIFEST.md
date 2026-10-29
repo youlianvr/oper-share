@@ -8,13 +8,14 @@ that is actually in use, with the private material removed.
 
 | Path | Contents |
 |---|---|
-| `AGENTS.md` | The law, loaded every turn: truth contract, sanity gate, permissions, memory rules, Git rules (83 lines) |
+| `AGENTS.md` | The law, loaded every turn: truth contract, sanity gate, permissions, memory rules, Git rules (85 lines) |
 | `BOOT.md` | The runbook: task start, memory verbs, skill routing, engineering procedure, safety, layout, diagnostics |
-| `HOSTS.md` | The tool surface per client: one verb table, a Freebuff Desktop profile, a generic profile, and how to wire a new host |
+| `WIKI.md` | The kit's map: what answers which question, the four layers (law, runbook, client, machine), the router shape, the memory roots and the update direction |
+| `HOSTS.md` | The tool surface per client: one verb table, a Freebuff Desktop profile (integrations, and how a skill reaches the account set), a generic profile, and how to wire a new host |
 | `BIRTH.md` | First-run bootstrap: probe, profile, create the tree, interview, verify, delete itself |
-| `SKILLS.md` | The 31 routers with their trigger descriptions and the four-block authoring contract |
+| `SKILLS.md` | The 33 routers with their trigger descriptions and the four-block authoring contract |
 | `PROVENANCE.md` | Origin and license of every vendored pack, and what was withheld because its license forbids this kind of redistribution |
-| `skills/` | 31 routers, 245 parts, 2 289 files: browser, research, design, decks, documents, security, OSINT, reverse engineering, memory, planning, review, ship and the rest |
+| `skills/` | 33 routers, 257 parts, 2 319 files: browser, research, design, decks, documents, security, OSINT, reverse engineering, memory, planning, review, ship and the rest |
 | `_scripts/` | `memory.py` (the RSI tree, stdlib SQLite), `eval_skills.py` (context cost + trigger benchmark), `sync_skills.py` (one-way publish to a host skill folder), `parity_claim.py`, `secret_gate.py` + a 17-entry baseline of reviewed vendor samples, `mcp-call.py`, `trash.sh` + `trash.ps1` |
 | `_memory/` | `INDEX.md` only. Birth adds `USER.md` and the store `memora.db`; that store is tracked on purpose, so a clone carries its decisions, and none of the three ships in this package |
 | `LICENSE` | CC BY 4.0 for first-party material; vendored parts keep their own |
@@ -49,7 +50,7 @@ say which engines are not bundled and that an install must be recorded in
    in a router resolves to a real folder; cross-router references carry the full
    `skills/<router>/parts/<x>/` path.
 3. **Scripts run on a bare tree.** `memory.py` was exercised through every verb on
-   a scratch store; `eval_skills.py` reports 31 routers, `AGENTS.md` at 83 lines and
+   a scratch store; `eval_skills.py` reports 33 routers, `AGENTS.md` at 85 lines and
    a trigger benchmark of Hit@1 27/31, Hit@3 31/31; `sync_skills.py` exits 0 with
    no host folder and plans correctly with one; `parity_claim.py` creates and lists a
    claim. `secret_gate.py` exits 0 on the shipped tree and exits 1 on a secret added

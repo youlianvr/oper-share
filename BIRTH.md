@@ -115,7 +115,7 @@ stays under 200 lines.
   names folders this tree does not own and will leave alone. Show that line to the
   user, say that `--apply` replaces the host copies of those routers — and that the
   host folder may hold skills which are not this tree's — then apply only on a yes.
-  Read `SKILLS.md` for what is there; do not read all 31 routers.
+  Read `SKILLS.md` for what is there; do not read all 33 routers.
 - **MCP servers.** If the host has an MCP config, list what it actually declares
   and make one real call to one server the user cares about. A server that is
   configured but never called is a decoration. Install nothing new without a
