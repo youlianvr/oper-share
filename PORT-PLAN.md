@@ -408,6 +408,11 @@ and `memory.py` starts, run from that clone rather than from the workspace. The
 branch is `master` because that is the repository's existing default; the commit
 content is the tree this package held at publication.
 
+The 2026-10-29 update below was pushed as four commits on top of that rewritten
+history (`55d5d6f..ccfd790`), so a clone now holds 2 319 files on six commits. The
+clone checks quoted above ran on the 2026-10-20 package; they were not repeated in a
+fresh clone after this update.
+
 | Commit | What it carries |
 |---|---|
 | `915d08bcf` | This document, the host-neutral law (`AGENTS.md`, `BOOT.md`, `HOSTS.md`, `_memory/INDEX.md`) |
@@ -564,9 +569,10 @@ answers what. It is referenced from `README.md`, `BOOT.md` § 1 and `MANIFEST.md
 
 **Host profile.** `HOSTS.md` gained the published-repository route into the client's
 account skill set (Settings → Skills → Discover skills, search the GitHub owner,
-add, save), with the screenshot taken during the check. The section states the
-platform behaviour only: the repository stays the canon and the account copy is a
-regenerated derivative.
+add, save). The section states the platform behaviour only: the repository stays the
+canon and the account copy is a regenerated derivative. The screenshot taken during
+the check was dropped before publication — it showed the account handle beside the
+names of skills this package deliberately does not ship — and the steps are text.
 
 **Numbers now.** 33 routers, 257 parts, 2 319 files; law 85 lines; startup cost
 ~4.3k tokens against ~3.2k of router descriptions. Re-verified with
