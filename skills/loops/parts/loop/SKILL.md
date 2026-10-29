@@ -13,8 +13,8 @@ description: >-
 license: Proprietary
 metadata:
   inspiration: "can1357/oh-my-pi, ByBrawe/opencode-loop, disler/infinite-agentic-loop — loop mechanics; rules and text are our own"
-  rewritten: oper-workspace 2026-10-03 — research.db/tasks.py/CYCLE.md assumptions
-    replaced with this workspace's layers (Memora, the branch owning the work)
+  rewritten: 2026-10-03 — an earlier toolchain's assumptions (a research sqlite
+    store, a task script, a cycle file) replaced with this kit's memory layers
 ---
 
 # loop — repeating autonomous iterations

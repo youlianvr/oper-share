@@ -13,8 +13,8 @@ description: >-
 
 > Home branch in Memora: `root/skill/review`.
 >
-> Boundary: `freebuff-patch-check` stays top-level for explicitly requested
-> read-only patch-history diagnosis. The patch set is retired, not startup work.
+> Boundary: client patches are out of scope — a retired patch set is not startup
+> work, and patch history is read-only diagnosis when the owner asks for it.
 > This router evaluates artifacts and claims; it does not revive client patches.
 >
 > Removed 2026-09-19 by owner order: rejudge, rejudge-diff, cross-eval

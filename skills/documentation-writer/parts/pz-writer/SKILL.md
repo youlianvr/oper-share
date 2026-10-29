@@ -2,8 +2,8 @@
 name: pz-writer
 description: >-
   Write and format a Russian school пояснительная записка (ПЗ, «записка») —
-  исследовательская работа for contests (Хрустальная Альфа, районные и
-  областные конференции, защита проекта) or a project/site description:
+  исследовательская работа for contests (district and regional conferences,
+  project defence) or a project/site description:
   canonical structures for both genres, title page, format profiles (15-page
   republican НИР standard vs the accepted school sample), [N, с. X] citations,
   hypothesis/task/evidence alignment, md -> docx generation and the
@@ -52,10 +52,9 @@ list are part of its format.
 Both: Times New Roman, body 14 pt, headings bold 14 pt, title 16 pt, justified,
 first-line indent 1,25 cm.
 
-**Requirements come from the organizer, not from this file.** The exact volume
-limit of a regional contest (e.g. «Хрустальная Альфа») is not published online;
-ask the районное управление образования. Casting the work to a profile is
-mechanical; guessing a limit is not.
+**Requirements come from the organizer, not from this file.** A regional contest's
+exact volume limit is often not published online; ask the district education
+department. Casting the work to a profile is mechanical; guessing a limit is not.
 
 ## Title page
 
